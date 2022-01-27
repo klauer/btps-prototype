@@ -1,0 +1,212 @@
+record(bi, "$(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV") {
+  field(DESC, "Tripped by overall log count")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.bTrickleTripped?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(longin, "$(PREFIX)LCLSGeneral:LogPort_RBV") {
+  field(DESC, "The log host UDP port")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.iLogPort?")
+  info(archive, "VAL")
+}
+
+record(longout, "$(PREFIX)LCLSGeneral:LogPort") {
+  field(DESC, "The log host UDP port")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Logger.iLogPort=")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(waveform, "$(PREFIX)LCLSGeneral:LogHost_RBV") {
+  field(DESC, "The log host IP address")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.cLogHost?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "$(PREFIX)LCLSGeneral:LogHost") {
+  field(DESC, "The log host IP address")
+  field(DTYP, "asynInt8ArrayOut")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Logger.cLogHost=")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "$(PREFIX)LCLSGeneral:LogMessageCount_RBV") {
+  field(DESC, "Total log messages on the last cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Logger.nGlobAccEvents?")
+  info(archive, "VAL")
+}
+
+record(ai, "$(PREFIX):Check:Motor:RBV_:EPICSLink_RBV") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbRBVCheck.fPLCInternalValue?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ao, "$(PREFIX):Check:Motor:RBV_:EPICSLink") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynFloat64")
+  field(DOL, "SIM:BPTS:Motor.RBV CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbRBVCheck.fPLCInternalValue=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "$(PREFIX):Check:Motor:RBV_:EPICSLink:LinkSeverity_RBV") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbRBVCheck.iPLCInternalSeverity?")
+  info(archive, "VAL")
+}
+
+record(longout, "$(PREFIX):Check:Motor:RBV_:EPICSLink:LinkSeverity") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynInt32")
+  field(DOL, "$(PREFIX):Check:Motor:RBV_:EPICSLink.SEVR CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbRBVCheck.iPLCInternalSeverity=")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(ai, "$(PREFIX):Check:Motor:Dmov_:EPICSLink_RBV") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbMovingCheck.fPLCInternalValue?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ao, "$(PREFIX):Check:Motor:Dmov_:EPICSLink") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynFloat64")
+  field(DOL, "SIM:BPTS:Motor.DMOV CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbMovingCheck.fPLCInternalValue=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "$(PREFIX):Check:Motor:Dmov_:EPICSLink:LinkSeverity_RBV") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbMovingCheck.iPLCInternalSeverity?")
+  info(archive, "VAL")
+}
+
+record(longout, "$(PREFIX):Check:Motor:Dmov_:EPICSLink:LinkSeverity") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynInt32")
+  field(DOL, "$(PREFIX):Check:Motor:Dmov_:EPICSLink.SEVR CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbMovingCheck.iPLCInternalSeverity=")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(ai, "$(PREFIX):Check:Motor:Msta_:EPICSLink_RBV") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbMotorStatusCheck.fPLCInternalValue?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ao, "$(PREFIX):Check:Motor:Msta_:EPICSLink") {
+  # Internal variable used to monitor EPICS PV in PLC
+  field(DESC, "Internal variable us...r EPICS PV in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynFloat64")
+  field(DOL, "SIM:BPTS:Motor.MSTA CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbMotorStatusCheck.fPLCInternalValue=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC VAL")
+  info(archive, "VAL")
+}
+
+record(longin, "$(PREFIX):Check:Motor:Msta_:EPICSLink:LinkSeverity_RBV") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/MAIN.fbMotorMonitor.fbMotorStatusCheck.iPLCInternalSeverity?")
+  info(archive, "VAL")
+}
+
+record(longout, "$(PREFIX):Check:Motor:Msta_:EPICSLink:LinkSeverity") {
+  # Internal variable used to monitor EPICS PV severity in PLC
+  field(DESC, "Internal variable us...V severity in PLC")
+  field(SCAN, ".5 second")
+  field(DTYP, "asynInt32")
+  field(DOL, "$(PREFIX):Check:Motor:Msta_:EPICSLink.SEVR CPP MS")
+  field(OMSL, "closed_loop")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbMotorMonitor.fbMotorStatusCheck.iPLCInternalSeverity=")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}

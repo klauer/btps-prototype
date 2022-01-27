@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="MAIN" Id="{98170510-de7b-424a-a18f-b4c889af69d0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	{attribute 'pytmc' := '
+		pv: @(PREFIX):Check:Motor
+		link: SIM:BTPS:Motor
+	'}
+	fbMotorMonitor : FB_EpicsMotorMonitor;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbMotorMonitor(bEnable:=TRUE);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,2 @@
+epicsEnvSet("IOC_TOP", "/c/Users/klauer/Documents/Repos/btps-prototype/iocBoot/ioc-Untitled1")
+epicsEnvSet("IOC_DATA", "C:\Users\klauer/iocData")
