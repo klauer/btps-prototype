@@ -14,6 +14,9 @@
     <LibraryReferences>{8d34967c-d3bf-47f2-a9d8-2f2d53bd1c79}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DUTs\DUT_EpicsMotorMSTA.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\FB_EpicsMotorMonitor.TcPOU">
       <SubType>Code</SubType>
     </Compile>

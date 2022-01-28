@@ -9,10 +9,10 @@ PROJECT_PATH := ../../btps-prototype/btps-prototype.tsproj
 PLC := Untitled1
 
 PYTMC_OPTS := 
-PREFIX := PLC:$(PLC)
+PREFIX := TST:BTPS:
 
 # With two $$, as in $$(IOC) below, this will be expanded in the
 # environment of st.cmd:
-DB_PARAMETERS := 'PREFIX=$(PREFIX):,IOCNAME=$$(IOC),IOC=$$(IOC)'
+DB_PARAMETERS := 'MOTOR_PREFIX=SIM:BTPS,PREFIX=$(PREFIX):,IOCNAME=$$(IOC),IOC=$$(IOC)'
 
 include $(IOC_TOP)/iocBoot/templates/Makefile.base

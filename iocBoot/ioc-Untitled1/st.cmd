@@ -6,7 +6,7 @@
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
 epicsEnvSet("ENGINEER", "klauer" )
-epicsEnvSet("LOCATION", "PLC:Untitled1" )
+epicsEnvSet("LOCATION", "TST:BTPS:" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
 
@@ -55,13 +55,13 @@ adsAsynPortDriverConfigure("$(ASYN_PORT)", "$(IPADDR)", "$(AMSID)", "$(AMS_PORT)
 cd "$(ADS_IOC_TOP)/db"
 
 
-dbLoadRecords("iocSoft.db", "IOC=PLC:Untitled1")
-dbLoadRecords("save_restoreStatus.db", "P=PLC:Untitled1:")
+dbLoadRecords("iocSoft.db", "IOC=TST:BTPS:")
+dbLoadRecords("save_restoreStatus.db", "P=TST:BTPS::")
 dbLoadRecords("caPutLog.db", "IOC=${IOC}")
 
 ## TwinCat System Databse files ##
-dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=ASYN_PLC, PREFIX=PLC:Untitled1")
-dbLoadRecords("TwinCAT_AppInfo.db", "PORT=ASYN_PLC, PREFIX=PLC:Untitled1")
+dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=ASYN_PLC, PREFIX=TST:BTPS:")
+dbLoadRecords("TwinCAT_AppInfo.db", "PORT=ASYN_PLC, PREFIX=TST:BTPS:")
 
 cd "$(IOC_TOP)"
 
@@ -73,7 +73,7 @@ cd "$(IOC_TOP)"
 set_savefile_path( "$(IOC_DATA)/$(IOC)/autosave" )
 set_requestfile_path( "$(IOC_TOP)/autosave" )
 
-save_restoreSet_status_prefix( "PLC:Untitled1:" )
+save_restoreSet_status_prefix( "TST:BTPS::" )
 save_restoreSet_IncompleteSetsOk( 1 )
 save_restoreSet_DatedBackupFiles( 1 )
 set_pass0_restoreFile( "info_positions.sav" )

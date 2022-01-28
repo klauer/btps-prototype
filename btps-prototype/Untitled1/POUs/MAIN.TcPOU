@@ -3,15 +3,86 @@
   <POU Name="MAIN" Id="{98170510-de7b-424a-a18f-b4c889af69d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	(*
+	Motor - Linear
+		LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
+		LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
+		LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
+	*)
 	{attribute 'pytmc' := '
-		pv: @(PREFIX):Check:Motor
-		link: SIM:BTPS:Motor
+		pv: @(MOTOR_PREFIX):Chk:B1Lin
+		link: @(SIM)LAS:BTS:MCS2:01:m1
 	'}
-	fbMotorMonitor : FB_EpicsMotorMonitor;
+	fbBay1Linear : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B3Lin
+		link: @(SIM)LAS:BTS:MCS2:01:m4
+	'}
+	fbBay3Linear : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B4Lin
+		link: @(SIM)LAS:BTS:MCS2:01:m7
+	'}
+	fbBay4Linear : FB_EpicsMotorMonitor;
+
+	(*	
+		Motor - Rotary
+			LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
+			LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
+			LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
+	*)
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B1Rot
+		link: @(SIM)LAS:BTS:MCS2:01:m2
+	'}
+	fbBay1Rotary : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B3Rot
+		link: @(SIM)LAS:BTS:MCS2:01:m6
+	'}
+	fbBay3Rotary : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B4Rot
+		link: @(SIM)LAS:BTS:MCS2:01:m8
+	'}
+	fbBay4Rotary : FB_EpicsMotorMonitor;
+	
+	(*
+		Motor - Goniometer
+			LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
+			LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
+			LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1) 
+	*)
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B1Gon
+		link: @(SIM)LAS:BTS:MCS2:01:m3
+	'}
+	fbBay1Goniometer : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B3Gon
+		link: @(SIM)LAS:BTS:MCS2:01:m5
+	'}
+	fbBay3Goniometer : FB_EpicsMotorMonitor;
+	{attribute 'pytmc' := '
+		pv: @(MOTOR_PREFIX):Chk:B4Gon
+		link: @(SIM)LAS:BTS:MCS2:01:m9
+	'}
+	fbBay4Goniometer : FB_EpicsMotorMonitor;
+
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[fbMotorMonitor(bEnable:=TRUE);]]></ST>
+      <ST><![CDATA[fbBay1Linear(bEnable:=TRUE);
+fbBay3Linear(bEnable:=TRUE);
+fbBay4Linear(bEnable:=TRUE);
+
+fbBay1Rotary(bEnable:=TRUE);
+fbBay3Rotary(bEnable:=TRUE);
+fbBay4Rotary(bEnable:=TRUE);
+
+fbBay1Goniometer(bEnable:=TRUE);
+fbBay3Goniometer(bEnable:=TRUE);
+fbBay4Goniometer(bEnable:=TRUE);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

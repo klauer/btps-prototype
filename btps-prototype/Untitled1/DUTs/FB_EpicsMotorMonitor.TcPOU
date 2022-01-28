@@ -14,7 +14,8 @@ END_VAR
 VAR_OUTPUT
 	bIsMoving : BOOL;
 	fPosition : LREAL;
-	nMSTA : UINT;
+	nMSTA_Raw : UINT;
+	stMSTA : DUT_EpicsMotorMSTA;
 	bValid : BOOL;
 END_VAR
 VAR
@@ -37,20 +38,38 @@ VAR
 	fbMotorStatusCheck : FB_LREALFromEPICS;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF bEnable THEN
-	fbRBVCheck();
-	fbMovingCheck();
-	bValid := (
-		fbRBVCheck.bValid AND 
-		fbMovingCheck.bValid AND
-		fbMotorStatusCheck.bValid
-	);
-	bIsMoving := ABS(fbMovingCheck.fValue) < 1e-5;
-	fPosition := fbRBVCheck.fValue;
-	nMSTA := LREAL_TO_UINT(fbMotorStatusCheck.fValue); 
-ELSE
+      <ST><![CDATA[IF NOT bEnable THEN
 	bValid := FALSE;
-END_IF]]></ST>
+	RETURN;
+END_IF
+
+fbRBVCheck();
+fbMovingCheck();
+fbMotorStatusCheck();
+bValid := (
+	fbRBVCheck.bValid AND 
+	fbMovingCheck.bValid AND
+	fbMotorStatusCheck.bValid
+);
+bIsMoving := ABS(fbMovingCheck.fValue) < 1e-5;
+fPosition := fbRBVCheck.fValue;
+
+nMSTA_Raw := LREAL_TO_UINT(fbMotorStatusCheck.fValue); 
+stMSTA.bPositiveDirection := nMSTA_Raw.0;
+stMSTA.bDone := nMSTA_Raw.1;
+stMSTA.bPlusLimitSwitch := nMSTA_Raw.2;
+stMSTA.bHomeLimitSwitch := nMSTA_Raw.3;
+stMSTA.bUnused0 := nMSTA_Raw.4;
+stMSTA.bClosedLoop := nMSTA_Raw.5;
+stMSTA.bSlipStall := nMSTA_Raw.6;
+stMSTA.bHome := nMSTA_Raw.7;
+stMSTA.bEncoderPresent := nMSTA_Raw.8;
+stMSTA.bHardwareProblem := nMSTA_Raw.9;
+stMSTA.bMoving := nMSTA_Raw.10;
+stMSTA.bGainSupport := nMSTA_Raw.11;
+stMSTA.bCommError := nMSTA_Raw.12;
+stMSTA.bMinusLimitSwitch := nMSTA_Raw.13;
+stMSTA.bHomed := nMSTA_Raw.14;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
