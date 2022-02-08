@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_BTPS_Constants" Id="{9a37ab9e-aa73-4851-ba45-23ade47dd444}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL CONSTANT
+	nSources : UINT := 4;
+	(* Destinations 
+	
+		LTLHN:LD8:VGC:01 (ioc-las-bts) - TMO - IP1
+        LTLHN:LD10:VGC:01 (ioc-las-bts) - TMO - IP2
+        LTLHN:LD2:VGC:01 (ioc-las-bts) - TMO - IP3
+		
+        LTLHN:LD6:VGC:01 (ioc-las-bts) - RIX - qRIXS
+        LTLHN:LD4:VGC:01 (ioc-las-bts) - RIX - ChemRIXS
+        LTLHN:LD14:VGC:01 (ioc-las-bts) - XPP
+		
+        LTLHN:LD9:VGC:01 (ioc-las-bts) - Laser Lab
+
+	*)
+	nDestinations: UINT := 7;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="FB_RangeComparison" Id="{cfc0fa49-ef4f-4087-9fba-d4596a28f7a5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_RangeComparison
+VAR_INPUT
+	(* The input value for comparison *)
+	{attribute 'pytmc' := 'pv: Value; io: input'}
+	fValue : LREAL;
+	(* The low part of the range. *)
+	{attribute 'pytmc' := 'pv: Low'}
+	fLow : LREAL;
+	(* The high part of the range. *)
+	{attribute 'pytmc' := 'pv: High'}
+	fHigh : LREAL;
+	(* Should the input value be trusted? *)
+	{attribute 'pytmc' := 'pv: Valid; io: input'}
+	bInputValid : BOOL := FALSE;
+	(* Are the limits inclusive? *)
+	{attribute 'pytmc' := 'pv: Inclusive; io: input'}
+	bInclusive : BOOL := TRUE;
+END_VAR
+VAR_OUTPUT
+	{attribute 'pytmc' := 'pv: InRange; io: input'}
+	bInRange : BOOL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT bInputValid OR fHigh < fLow THEN
+	bInRange := FALSE;
+ELSIF bInclusive THEN
+	bInRange := (fValue >= fLow) AND (fValue <= fHigh);
+ELSE
+	bInRange := (fValue > fLow) AND (fValue < fHigh);
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
