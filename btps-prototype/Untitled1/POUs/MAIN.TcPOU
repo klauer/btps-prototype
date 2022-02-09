@@ -4,11 +4,12 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 
-	fbDestination :REFERENCE TO FB_DestinationDataStore;
-	fbSource: REFERENCE TO DUT_SourceDataStore;
-	nDestination: UINT;
-	nSource: UINT;
-	nIndex: UINT;
+	(* TODO NOTES *)
+	(*
+		
+	1. Disable FP exceptions for the plc task
+	
+	*)
 END_VAR
 ]]></Declaration>
     <Implementation>

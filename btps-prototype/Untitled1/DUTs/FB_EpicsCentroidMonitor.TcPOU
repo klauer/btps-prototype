@@ -59,14 +59,27 @@ VAR
 	'} 
 	fbArrayCounter : FB_LREALFromEPICS;
 	
+	// Last array count value
 	nLastArrayCount : UDINT;
-	tLastUpdate: TON;
+	// Time of the last frame update
+	tLastUpdate: TIME;
+	
+	bInit : BOOL;
+	// Did we see a frame update yet?
+	bSawFrame : BOOL;
 	
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF NOT bEnable THEN
 	bValid := FALSE;
 	RETURN;
+END_IF
+
+IF NOT bInit THEN
+	tLastUpdate := TIME();
+	fFrameTime := 1000.0;
+	bSawFrame := FALSE;
+	bInit := TRUE;
 END_IF
 
 fbCentroidX();
@@ -84,10 +97,13 @@ fCentroidY := fbCentroidX.fValue;
 nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);
 
 IF nArrayCount <> nLastArrayCount THEN
-	tLastUpdate(IN:=0, PT:=T#0S);
+	fFrameTime := TIME_TO_LREAL(TIME() - tLastUpdate) * 0.001; // Milliseconds -> seconds
+	tLastUpdate := TIME();
+	nLastArrayCount := nArrayCount;
+	bSawFrame := TRUE;
 END_IF
-tLastUpdate(IN:=1, PT:=T#0S);
-bIsUpdating := tLastUpdate.ET <= LREAL_TO_TIME(GVL_BTPS.fMaximumFrameTime * 1000.0);]]></ST>
+
+bIsUpdating := bSawFrame AND (fFrameTime <= GVL_BTPS.fMaximumFrameTime);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
