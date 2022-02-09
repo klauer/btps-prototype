@@ -9,15 +9,36 @@
 *)
 FUNCTION_BLOCK FB_EpicsCentroidMonitor
 VAR_INPUT
-	fMinimumUpdateRate : LREAL := 0.2;
+	fMaximumFrameTime : LREAL := 0.2;
 	bEnable : BOOL := TRUE;
 END_VAR
 VAR_OUTPUT
+	{attribute 'pytmc' := '
+		pv: IsUpdating
+		io: input
+	'} 
 	bIsUpdating : BOOL;
+	{attribute 'pytmc' := '
+		pv: CentroidX
+		io: input
+	'} 
 	fCentroidX : LREAL;
+	{attribute 'pytmc' := '
+		pv: CentroidY
+		io: input
+	'} 
 	fCentroidY : LREAL;
+	{attribute 'pytmc' := '
+		pv: ArrayCount
+		io: input
+	'} 
 	nArrayCount : UDINT;
 	bValid : BOOL;
+	{attribute 'pytmc' := '
+		pv: FrameTime
+		io: input
+	'} 
+	fFrameTime : LREAL;
 END_VAR
 VAR
 	{attribute 'pytmc' := '
@@ -37,6 +58,10 @@ VAR
 		link: ArrayCounter_RBV
 	'} 
 	fbArrayCounter : FB_LREALFromEPICS;
+	
+	nLastArrayCount : UDINT;
+	tLastUpdate: TON;
+	
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF NOT bEnable THEN
@@ -54,10 +79,15 @@ bValid := (
 	fbArrayCounter.bValid
 );
 
-bIsUpdating := FALSE;
 fCentroidX := fbCentroidX.fValue;
 fCentroidY := fbCentroidX.fValue;
-nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);]]></ST>
+nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);
+
+IF nArrayCount <> nLastArrayCount THEN
+	tLastUpdate(IN:=0, PT:=T#0S);
+END_IF
+tLastUpdate(IN:=1, PT:=T#0S);
+bIsUpdating := tLastUpdate.ET <= LREAL_TO_TIME(GVL_BTPS.fMaximumFrameTime * 1000.0);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
