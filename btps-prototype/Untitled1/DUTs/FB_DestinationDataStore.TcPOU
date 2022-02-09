@@ -3,7 +3,7 @@
   <POU Name="FB_DestinationDataStore" Id="{95d6d775-de95-4d9d-948d-6053fdff2857}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_DestinationDataStore
 VAR_INPUT
-	{attribute 'pytmc' := 'pv: Name: io: input'}
+	{attribute 'pytmc' := 'pv: Name; io: input'}
 	sName : STRING;
 	{attribute 'pytmc' := 'pv: DestValve'}
 	fbDestinationValve : REFERENCE TO FB_VGC;
