@@ -2,84 +2,84 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="FB_EpicsCentroidMonitor" Id="{b49e72a7-c7c2-451d-96d1-aade68e9ce98}" SpecialFunc="None">
     <Declaration><![CDATA[(*
-	EPICS AreaDetector Stats Plugin Centroid Monitor
-	
-	Requires a "link" pragma to specify the full plugin prefix.
-	
+    EPICS AreaDetector Stats Plugin Centroid Monitor
+
+    Requires a "link" pragma to specify the full plugin prefix.
+
 *)
 FUNCTION_BLOCK FB_EpicsCentroidMonitor
 VAR_INPUT
-	fMaximumFrameTime : LREAL := 0.2;
-	bEnable : BOOL := TRUE;
+    fMaximumFrameTime : LREAL := 0.2;
+    bEnable : BOOL := TRUE;
 END_VAR
 VAR_OUTPUT
-	{attribute 'pytmc' := '
-		pv: IsUpdating
-		io: input
-	'} 
-	bIsUpdating : BOOL;
-	{attribute 'pytmc' := '
-		pv: CentroidX
-		io: input
-	'} 
-	fCentroidX : LREAL;
-	{attribute 'pytmc' := '
-		pv: CentroidY
-		io: input
-	'} 
-	fCentroidY : LREAL;
-	{attribute 'pytmc' := '
-		pv: ArrayCount
-		io: input
-	'} 
-	nArrayCount : UDINT;
-	bValid : BOOL;
-	{attribute 'pytmc' := '
-		pv: FrameTime
-		io: input
-	'} 
-	fFrameTime : LREAL;
+    {attribute 'pytmc' := '
+        pv: IsUpdating
+        io: input
+    '}
+    bIsUpdating : BOOL;
+    {attribute 'pytmc' := '
+        pv: CentroidX
+        io: input
+    '}
+    fCentroidX : LREAL;
+    {attribute 'pytmc' := '
+        pv: CentroidY
+        io: input
+    '}
+    fCentroidY : LREAL;
+    {attribute 'pytmc' := '
+        pv: ArrayCount
+        io: input
+    '}
+    nArrayCount : UDINT;
+    bValid : BOOL;
+    {attribute 'pytmc' := '
+        pv: FrameTime
+        io: input
+    '}
+    fFrameTime : LREAL;
 END_VAR
 VAR
-	{attribute 'pytmc' := '
-		pv: CX_
-		link: CentroidX_RBV
-	'} 
-	fbCentroidX : FB_LREALFromEPICS;
-	
-	{attribute 'pytmc' := '
-		pv: CY_
-		link: CentroidY_RBV
-	'} 
-	fbCentroidY : FB_LREALFromEPICS;
-	
-	{attribute 'pytmc' := '
-		pv: Cnt_
-		link: ArrayCounter_RBV
-	'} 
-	fbArrayCounter : FB_LREALFromEPICS;
-	
-	// Last array count value
-	nLastArrayCount : UDINT;
-	// Time of the last frame update
-	tLastUpdate: TIME;
-	
-	bInit : BOOL;
-	// Did we see a frame update yet?
-	bSawFrame : BOOL;
-	
+    {attribute 'pytmc' := '
+        pv: CX_
+        link: CentroidX_RBV
+    '}
+    fbCentroidX : FB_LREALFromEPICS;
+
+    {attribute 'pytmc' := '
+        pv: CY_
+        link: CentroidY_RBV
+    '}
+    fbCentroidY : FB_LREALFromEPICS;
+
+    {attribute 'pytmc' := '
+        pv: Cnt_
+        link: ArrayCounter_RBV
+    '}
+    fbArrayCounter : FB_LREALFromEPICS;
+
+    // Last array count value
+    nLastArrayCount : UDINT;
+    // Time of the last frame update
+    tLastUpdate: TIME;
+
+    bInit : BOOL;
+    // Did we see a frame update yet?
+    bSawFrame : BOOL;
+
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF NOT bEnable THEN
-	bValid := FALSE;
-	RETURN;
+    bValid := FALSE;
+    RETURN;
 END_IF
 
 IF NOT bInit THEN
-	tLastUpdate := TIME();
-	fFrameTime := 1000.0;
-	bSawFrame := FALSE;
-	bInit := TRUE;
+    tLastUpdate := TIME();
+    fFrameTime := 1000.0;
+    bSawFrame := FALSE;
+    bInit := TRUE;
 END_IF
 
 fbCentroidX();
@@ -87,9 +87,9 @@ fbCentroidY();
 fbArrayCounter();
 
 bValid := (
-	fbCentroidX.bValid AND 
-	fbCentroidY.bValid AND
-	fbArrayCounter.bValid
+    fbCentroidX.bValid AND
+    fbCentroidY.bValid AND
+    fbArrayCounter.bValid
 );
 
 fCentroidX := fbCentroidX.fValue;
@@ -97,10 +97,10 @@ fCentroidY := fbCentroidX.fValue;
 nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);
 
 IF nArrayCount <> nLastArrayCount THEN
-	fFrameTime := TIME_TO_LREAL(TIME() - tLastUpdate) * 0.001; // Milliseconds -> seconds
-	tLastUpdate := TIME();
-	nLastArrayCount := nArrayCount;
-	bSawFrame := TRUE;
+    fFrameTime := TIME_TO_LREAL(TIME() - tLastUpdate) * 0.001; // Milliseconds -> seconds
+    tLastUpdate := TIME();
+    nLastArrayCount := nArrayCount;
+    bSawFrame := TRUE;
 END_IF
 
 bIsUpdating := bSawFrame AND (fFrameTime <= GVL_BTPS.fMaximumFrameTime);]]></ST>

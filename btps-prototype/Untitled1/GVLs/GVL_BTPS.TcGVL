@@ -3,127 +3,127 @@
   <GVL Name="GVL_BTPS" Id="{95cd0a46-696d-4a91-9add-3a055029a394}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
-	(*
-	Motor - Linear
-		LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
-		LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
-		LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
-	*)
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B1Lin
-		link: @(SIM)LAS:BTS:MCS2:01:m1
-	'}
-	fbBay1Linear : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B3Lin
-		link: @(SIM)LAS:BTS:MCS2:01:m4
-	'}
-	fbBay3Linear : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B4Lin
-		link: @(SIM)LAS:BTS:MCS2:01:m7
-	'}
-	fbBay4Linear : FB_EpicsMotorMonitor;
+    (*
+    Motor - Linear
+        LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
+        LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
+        LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
+    *)
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B1Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m1
+    '}
+    fbBay1Linear : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B3Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m4
+    '}
+    fbBay3Linear : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B4Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m7
+    '}
+    fbBay4Linear : FB_EpicsMotorMonitor;
 
-	(*	
-		Motor - Rotary
-			LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
-			LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
-			LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
-	*)
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B1Rot
-		link: @(SIM)LAS:BTS:MCS2:01:m2
-	'}
-	fbBay1Rotary : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B3Rot
-		link: @(SIM)LAS:BTS:MCS2:01:m6
-	'}
-	fbBay3Rotary : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B4Rot
-		link: @(SIM)LAS:BTS:MCS2:01:m8
-	'}
-	fbBay4Rotary : FB_EpicsMotorMonitor;
-	
-	(*
-		Motor - Goniometer
-			LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
-			LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
-			LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1) 
-	*)
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B1Gon
-		link: @(SIM)LAS:BTS:MCS2:01:m3
-	'}
-	fbBay1Goniometer : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B3Gon
-		link: @(SIM)LAS:BTS:MCS2:01:m5
-	'}
-	fbBay3Goniometer : FB_EpicsMotorMonitor;
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:B4Gon
-		link: @(SIM)LAS:BTS:MCS2:01:m9
-	'}
-	fbBay4Goniometer : FB_EpicsMotorMonitor;
+    (*
+        Motor - Rotary
+            LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
+    *)
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B1Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m2
+    '}
+    fbBay1Rotary : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B3Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m6
+    '}
+    fbBay3Rotary : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B4Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m8
+    '}
+    fbBay4Rotary : FB_EpicsMotorMonitor;
 
-	(* Near field camera stats plugins, per bay *)
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:NF1
-		link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
-	'}
-	fbBay1NearFieldCamStats : FB_EpicsCentroidMonitor;
+    (*
+        Motor - Goniometer
+            LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1)
+    *)
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B1Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m3
+    '}
+    fbBay1Goniometer : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B3Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m5
+    '}
+    fbBay3Goniometer : FB_EpicsMotorMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:B4Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m9
+    '}
+    fbBay4Goniometer : FB_EpicsMotorMonitor;
 
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:NF3
-		link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
-	'}
-	fbBay3NearFieldCamStats : FB_EpicsCentroidMonitor;
+    (* Near field camera stats plugins, per bay *)
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:NF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
+    '}
+    fbBay1NearFieldCamStats : FB_EpicsCentroidMonitor;
 
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:NF4
-		link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
-	'}
-	fbBay4NearFieldCamStats : FB_EpicsCentroidMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:NF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
+    '}
+    fbBay3NearFieldCamStats : FB_EpicsCentroidMonitor;
 
-	(* Far-field camera stats plugins, per bay *)
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:FF1
-		link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
-	'}
-	fbBay1FarFieldCamStats : FB_EpicsCentroidMonitor;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:NF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
+    '}
+    fbBay4NearFieldCamStats : FB_EpicsCentroidMonitor;
 
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:FF3
-		link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
-	'}
-	fbBay3FarFieldCamStats : FB_EpicsCentroidMonitor;
+    (* Far-field camera stats plugins, per bay *)
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:FF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
+    '}
+    fbBay1FarFieldCamStats : FB_EpicsCentroidMonitor;
 
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Chk:FF4
-		link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
-	'}
-	fbBay4FarFieldCamStats : FB_EpicsCentroidMonitor;
-	
-	(* Temporary valves for testing *)
-	fbBay1SourceValve : FB_VGC;
-	fbBay3SourceValve : FB_VGC;
-	fbBay4SourceValve : FB_VGC;
-	fbDestinationValves : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_VGC;
-	
-	{attribute 'pytmc' := '
-		pv: @(BTPS):DEST
-	'}
-	fbDestinations : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_DestinationDataStore;
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:FF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
+    '}
+    fbBay3FarFieldCamStats : FB_EpicsCentroidMonitor;
 
-	{attribute 'pytmc' := '
-		pv: @(BTPS):Config:MaxFrameTime
-		field: DESC Maximum delay from frame to frame
-	'}
-	fMaximumFrameTime : LREAL;
-	
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Chk:FF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
+    '}
+    fbBay4FarFieldCamStats : FB_EpicsCentroidMonitor;
+
+    (* Temporary valves for testing *)
+    fbBay1SourceValve : FB_VGC;
+    fbBay3SourceValve : FB_VGC;
+    fbBay4SourceValve : FB_VGC;
+    fbDestinationValves : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_VGC;
+
+    {attribute 'pytmc' := '
+        pv: @(BTPS):DEST
+    '}
+    fbDestinations : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_DestinationDataStore;
+
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Config:MaxFrameTime
+        field: DESC Maximum delay from frame to frame
+    '}
+    fMaximumFrameTime : LREAL;
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

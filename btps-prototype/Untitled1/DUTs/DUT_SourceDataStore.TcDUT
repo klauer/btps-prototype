@@ -3,26 +3,41 @@
   <DUT Name="DUT_SourceDataStore" Id="{19ae7841-9ce1-47c6-a2ac-e8b660e4994e}">
     <Declaration><![CDATA[TYPE DUT_SourceDataStore :
 STRUCT
-	{attribute 'pytmc' := 'pv: Valve'}
-	fbSourceValve : REFERENCE TO FB_VGC;
-	{attribute 'pytmc' := 'pv: Valid'}
-	bDataValid : BOOL;
-	{attribute 'pytmc' := 'pv: ChecksOK'}
-	bChecksOK : BOOL;
-	{attribute 'pytmc' := 'pv: Linear'}
-	fbLinear : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: Rotary'}
-	fbRotary : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: Goniometer'}
-	fbGoniometer : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: NFCenterX'}
-	fbNFCentroidX : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: NFCenterY'}
-	fbNFCentroidY : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: FFCenterX'}
-	fbFFCentroidX : FB_RangeComparison;
-	{attribute 'pytmc' := 'pv: FFCenterY'}
-	fbFFCentroidY : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: Valve'}
+    fbSourceValve : REFERENCE TO FB_VGC;
+    {attribute 'pytmc' := '
+        pv: Valid
+        io: input
+        field: ZNAM Data Invalid
+        field: ONAM Data Valid
+        field: ZSV MAJOR
+        field: OSV NO_ALARM
+    '}
+    bDataValid : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: ChecksOK
+        io: input
+        field: ZNAM Failed
+        field: ONAM Passed
+        field: ZSV MAJOR
+        field: OSV NO_ALARM
+    '}
+    bChecksOK : BOOL;
+    {attribute 'pytmc' := 'pv: Linear'}
+    fbLinear : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: Rotary'}
+    fbRotary : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: Goniometer'}
+    fbGoniometer : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: NFCenterX'}
+    fbNFCentroidX : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: NFCenterY'}
+    fbNFCentroidY : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: FFCenterX'}
+    fbFFCentroidX : FB_RangeComparison;
+    {attribute 'pytmc' := 'pv: FFCenterY'}
+    fbFFCentroidY : FB_RangeComparison;
 END_STRUCT
 END_TYPE
 ]]></Declaration>
