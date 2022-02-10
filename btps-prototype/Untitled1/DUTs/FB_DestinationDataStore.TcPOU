@@ -30,6 +30,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[Update(
     stDataSource:=stSourceDataStore1,
+    sName:='Source 1',
     fbSourceValve:=GVL_BTPS.fbBay1SourceValve,
     fbLinear:=GVL_BTPS.fbBay1Linear,
     fbRotary:=GVL_BTPS.fbBay1Rotary,
@@ -42,6 +43,7 @@ END_VAR
 (*
 Update(
     stDataSource:=stSourceDataStore2,
+    sName:='Source 2',
     fbSourceValve:=GVL_BTPS.fbBay2SourceValve,
     fbLinear:=GVL_BTPS.fbBay2Linear,
     fbRotary:=GVL_BTPS.fbBay2Rotary,
@@ -53,6 +55,7 @@ Update(
 
 Update(
     stDataSource:=stSourceDataStore3,
+    sName:='Source 3',
     fbSourceValve:=GVL_BTPS.fbBay3SourceValve,
     fbLinear:=GVL_BTPS.fbBay3Linear,
     fbRotary:=GVL_BTPS.fbBay3Rotary,
@@ -63,6 +66,7 @@ Update(
 
 Update(
     stDataSource:=stSourceDataStore4,
+    sName:='Source 4',
     fbSourceValve:=GVL_BTPS.fbBay4SourceValve,
     fbLinear:=GVL_BTPS.fbBay4Linear,
     fbRotary:=GVL_BTPS.fbBay4Rotary,
@@ -74,6 +78,9 @@ Update(
     </Implementation>
     <Method Name="Update" Id="{99a0d2c7-b05c-4070-8558-74c8b8a2c372}">
       <Declaration><![CDATA[METHOD Update : BOOL
+VAR_INPUT
+    sName : STRING;
+END_VAR
 VAR_IN_OUT
     // The data source to update
     stDataSource : DUT_SourceDataStore;
@@ -88,7 +95,8 @@ VAR_IN_OUT
 
 END_VAR]]></Declaration>
       <Implementation>
-        <ST><![CDATA[stDataSource.fbSourceValve REF= fbSourceValve;
+        <ST><![CDATA[stDataSource.sName := sName;
+stDataSource.fbSourceValve REF= fbSourceValve;
 
 (* Update range comparisons with their source values *)
 (* Cameras *)

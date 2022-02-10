@@ -3,6 +3,8 @@
   <DUT Name="DUT_SourceDataStore" Id="{19ae7841-9ce1-47c6-a2ac-e8b660e4994e}">
     <Declaration><![CDATA[TYPE DUT_SourceDataStore :
 STRUCT
+    {attribute 'pytmc' := 'pv: Name; io: input'}
+    sName : STRING;
     {attribute 'pytmc' := 'pv: Valve'}
     fbSourceValve : REFERENCE TO FB_VGC;
     {attribute 'pytmc' := '

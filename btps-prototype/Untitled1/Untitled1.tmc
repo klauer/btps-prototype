@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{0CE36E61-4C33-C54D-F992-968AB36781AA}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{D2D8F232-638F-9F05-F67D-FF8BD1FE17D6}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -658,31 +658,31 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>79496712</GetCodeOffs>
+        <GetCodeOffs>79498560</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>79496744</GetCodeOffs>
+        <GetCodeOffs>79498592</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79496752</GetCodeOffs>
+        <GetCodeOffs>79498600</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79496736</GetCodeOffs>
+        <GetCodeOffs>79498584</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sResult</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79496748</GetCodeOffs>
+        <GetCodeOffs>79498596</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="0">__getbBusy</Name>
@@ -1891,15 +1891,15 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>nId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79496656</GetCodeOffs>
-        <SetCodeOffs>79496680</SetCodeOffs>
+        <GetCodeOffs>79498504</GetCodeOffs>
+        <SetCodeOffs>79498528</SetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79496692</GetCodeOffs>
-        <SetCodeOffs>79496704</SetCodeOffs>
+        <GetCodeOffs>79498540</GetCodeOffs>
+        <SetCodeOffs>79498552</SetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="9">__setbCutInstancePathByLastInst</Name>
@@ -2167,31 +2167,31 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>eSeverity</Name>
         <Type GUID="{B57D3F4A-0836-49B0-81C3-BED5F4817EC9}">TcEventSeverity</Type>
         <BitSize>16</BitSize>
-        <GetCodeOffs>79496800</GetCodeOffs>
+        <GetCodeOffs>79498648</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>ipSourceInfo</Name>
         <Type Namespace="L2SI_Vacuum_Library.Tc3_EventLogger">I_TcSourceInfo</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79496780</GetCodeOffs>
+        <GetCodeOffs>79498628</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nEventId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79496868</GetCodeOffs>
+        <GetCodeOffs>79498716</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventClassName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79496828</GetCodeOffs>
+        <GetCodeOffs>79498676</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79496872</GetCodeOffs>
+        <GetCodeOffs>79498720</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>EqualsToEventClass</Name>
@@ -2764,7 +2764,7 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>nTimeSent</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>79496896</GetCodeOffs>
+        <GetCodeOffs>79498744</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>SetJsonAttribute</Name>
@@ -7685,11 +7685,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_BOOL</Name>
@@ -7822,11 +7817,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -7986,11 +7976,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>CalculateAndSetNumberOfAssertsForTest</Name>
@@ -8125,11 +8110,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -8288,11 +8268,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -8798,11 +8773,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -9578,11 +9548,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_TIME</Name>
@@ -9961,11 +9926,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_INT</Name>
@@ -10057,11 +10017,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -10189,11 +10144,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_LWORD</Name>
@@ -10295,11 +10245,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -10614,11 +10559,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AreAllTestsFinished</Name>
@@ -10788,11 +10728,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -10977,11 +10912,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_LREAL</Name>
@@ -11079,11 +11009,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -19542,12 +19467,24 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
     </DataType>
     <DataType>
       <Name>DUT_SourceDataStore</Name>
-      <BitSize>2304</BitSize>
+      <BitSize>3008</BitSize>
+      <SubItem>
+        <Name>sName</Name>
+        <Type>STRING(80)</Type>
+        <BitSize>648</BitSize>
+        <BitOffs>0</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>pv: Name; io: input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
       <SubItem>
         <Name>fbSourceValve</Name>
         <Type Namespace="L2SI_Vacuum_Library" ReferenceTo="true">FB_VGC</Type>
         <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
+        <BitOffs>672</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19559,7 +19496,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>bDataValid</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>32</BitOffs>
+        <BitOffs>704</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19578,7 +19515,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>bChecksOK</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>40</BitOffs>
+        <BitOffs>712</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19597,7 +19534,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbLinear</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>64</BitOffs>
+        <BitOffs>768</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19609,7 +19546,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbRotary</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>384</BitOffs>
+        <BitOffs>1088</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19621,7 +19558,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbGoniometer</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>704</BitOffs>
+        <BitOffs>1408</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19633,7 +19570,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbNFCentroidX</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>1024</BitOffs>
+        <BitOffs>1728</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19645,7 +19582,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbNFCentroidY</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>1344</BitOffs>
+        <BitOffs>2048</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19657,7 +19594,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbFFCentroidX</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>1664</BitOffs>
+        <BitOffs>2368</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19669,7 +19606,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>fbFFCentroidY</Name>
         <Type>FB_RangeComparison</Type>
         <BitSize>320</BitSize>
-        <BitOffs>1984</BitOffs>
+        <BitOffs>2688</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -19680,7 +19617,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
     </DataType>
     <DataType>
       <Name>FB_DestinationDataStore</Name>
-      <BitSize>7744</BitSize>
+      <BitSize>9856</BitSize>
       <SubItem>
         <Name>sName</Name>
         <Type>STRING(80)</Type>
@@ -19716,7 +19653,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
       <SubItem>
         <Name>stSourceDataStore1</Name>
         <Type>DUT_SourceDataStore</Type>
-        <BitSize>2304</BitSize>
+        <BitSize>3008</BitSize>
         <BitOffs>768</BitOffs>
         <Properties>
           <Property>
@@ -19735,8 +19672,8 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Comment> Future use:
  {attribute 'pytmc' := 'pv: SRC:02'}
  stSourceDataStore2 : DUT_SourceDataStore;</Comment>
-        <BitSize>2304</BitSize>
-        <BitOffs>3072</BitOffs>
+        <BitSize>3008</BitSize>
+        <BitOffs>3776</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -19751,8 +19688,8 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
       <SubItem>
         <Name>stSourceDataStore4</Name>
         <Type>DUT_SourceDataStore</Type>
-        <BitSize>2304</BitSize>
-        <BitOffs>5376</BitOffs>
+        <BitSize>3008</BitSize>
+        <BitOffs>6784</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -19769,7 +19706,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Type>BOOL</Type>
         <Comment> stSourceDataStore : ARRAY [1..GVL_BTPS_Constants.nSources] OF DUT_SourceDataStore;</Comment>
         <BitSize>8</BitSize>
-        <BitOffs>7680</BitOffs>
+        <BitOffs>9792</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -19781,18 +19718,23 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Name>nIndex</Name>
         <Type>UINT</Type>
         <BitSize>16</BitSize>
-        <BitOffs>7696</BitOffs>
+        <BitOffs>9808</BitOffs>
       </SubItem>
       <SubItem>
         <Name>stSource</Name>
         <Type ReferenceTo="true">DUT_SourceDataStore</Type>
         <BitSize>32</BitSize>
-        <BitOffs>7712</BitOffs>
+        <BitOffs>9824</BitOffs>
       </SubItem>
       <Method>
         <Name>Update</Name>
         <ReturnType>BOOL</ReturnType>
         <ReturnBitSize>8</ReturnBitSize>
+        <Parameter>
+          <Name>sName</Name>
+          <Type>STRING(80)</Type>
+          <BitSize>648</BitSize>
+        </Parameter>
         <Parameter>
           <Name>stDataSource</Name>
           <Comment> The data source to update</Comment>
@@ -20383,7 +20325,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80281600</ByteSize>
+          <ByteSize>80347136</ByteSize>
           <Symbol>
             <Name>L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
             <Comment> AMS Net ID used for FB_EcatDiag, among others </Comment>
@@ -20673,7 +20615,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80281600</ByteSize>
+          <ByteSize>80347136</ByteSize>
           <Symbol>
             <Name>GVL_BTPS.fbBay1SourceValve.q_xOPN_DO</Name>
             <BitSize>8</BitSize>
@@ -20799,7 +20741,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80281600</ByteSize>
+          <ByteSize>80347136</ByteSize>
           <Symbol>
             <Name>Constants.gc_iSizeOfGGOArray</Name>
             <BitSize>16</BitSize>
@@ -27053,7 +26995,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinations</Name>
-            <BitSize>54208</BitSize>
+            <BitSize>68992</BitSize>
             <BaseType>FB_DestinationDataStore</BaseType>
             <ArrayInfo>
               <LBound>1</LBound>
@@ -27088,7 +27030,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837248</BitOffs>
+            <BitOffs>635852032</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -27118,7 +27060,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837312</BitOffs>
+            <BitOffs>635852096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersion</Name>
@@ -27148,7 +27090,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837376</BitOffs>
+            <BitOffs>635852160</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nRegisterSize</Name>
@@ -27163,7 +27105,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837440</BitOffs>
+            <BitOffs>635852224</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nPackMode</Name>
@@ -27178,7 +27120,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837456</BitOffs>
+            <BitOffs>635852240</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bFPUSupport</Name>
@@ -27192,7 +27134,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837472</BitOffs>
+            <BitOffs>635852256</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -27206,7 +27148,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837504</BitOffs>
+            <BitOffs>635852288</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersionNumeric</Name>
@@ -27220,7 +27162,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837536</BitOffs>
+            <BitOffs>635852320</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._AppInfo</Name>
@@ -27234,7 +27176,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635837568</BitOffs>
+            <BitOffs>635852352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
@@ -27252,7 +27194,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635839616</BitOffs>
+            <BitOffs>635854400</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
@@ -27266,7 +27208,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635840640</BitOffs>
+            <BitOffs>635855424</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
@@ -27280,7 +27222,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635840672</BitOffs>
+            <BitOffs>635855456</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
@@ -27301,7 +27243,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635840704</BitOffs>
+            <BitOffs>635855488</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENTS.LCLSGeneralEventClass</Name>
@@ -27324,14 +27266,14 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635884032</BitOffs>
+            <BitOffs>635898816</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80281600</ByteSize>
+          <ByteSize>80347136</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -27385,7 +27327,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2022-02-09T16:16:24</Value>
+          <Value>2022-02-09T17:07:20</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
@@ -27393,7 +27335,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79011840</Value>
+          <Value>79015936</Value>
         </Property>
       </Properties>
     </Module>
