@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{535A302B-A2AB-2591-EDCF-EFBE8B2DA0B4}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{B17BC37D-3D99-DED9-B1FB-8096270C463C}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -658,31 +658,31 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>79498560</GetCodeOffs>
+        <GetCodeOffs>79498668</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>79498592</GetCodeOffs>
+        <GetCodeOffs>79498700</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79498600</GetCodeOffs>
+        <GetCodeOffs>79498708</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79498584</GetCodeOffs>
+        <GetCodeOffs>79498692</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sResult</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79498596</GetCodeOffs>
+        <GetCodeOffs>79498704</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="0">__getbBusy</Name>
@@ -1891,15 +1891,15 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>nId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79498504</GetCodeOffs>
-        <SetCodeOffs>79498528</SetCodeOffs>
+        <GetCodeOffs>79498612</GetCodeOffs>
+        <SetCodeOffs>79498636</SetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79498540</GetCodeOffs>
-        <SetCodeOffs>79498552</SetCodeOffs>
+        <GetCodeOffs>79498648</GetCodeOffs>
+        <SetCodeOffs>79498660</SetCodeOffs>
       </PropertyItem>
       <Method>
         <Name RpcEnable="plc" VTableIndex="9">__setbCutInstancePathByLastInst</Name>
@@ -2167,31 +2167,31 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>eSeverity</Name>
         <Type GUID="{B57D3F4A-0836-49B0-81C3-BED5F4817EC9}">TcEventSeverity</Type>
         <BitSize>16</BitSize>
-        <GetCodeOffs>79498648</GetCodeOffs>
+        <GetCodeOffs>79498756</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>ipSourceInfo</Name>
         <Type Namespace="L2SI_Vacuum_Library.Tc3_EventLogger">I_TcSourceInfo</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79498628</GetCodeOffs>
+        <GetCodeOffs>79498736</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nEventId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>79498716</GetCodeOffs>
+        <GetCodeOffs>79498824</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventClassName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79498676</GetCodeOffs>
+        <GetCodeOffs>79498784</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>79498720</GetCodeOffs>
+        <GetCodeOffs>79498828</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>EqualsToEventClass</Name>
@@ -2764,7 +2764,7 @@ These features aren't disabled, they just aren't used, think child/parent classe
         <Name>nTimeSent</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>79498744</GetCodeOffs>
+        <GetCodeOffs>79498852</GetCodeOffs>
       </PropertyItem>
       <Method>
         <Name>SetJsonAttribute</Name>
@@ -14673,6 +14673,233 @@ be up-to-date and valid within `tTimeout` seconds.
       </Properties>
     </DataType>
     <DataType>
+      <Name>FB_EpicsCentroidMonitor</Name>
+      <Comment>
+    EPICS AreaDetector Stats Plugin Centroid Monitor
+
+    Requires a "link" pragma to specify the full plugin prefix.
+
+</Comment>
+      <BitSize>3456</BitSize>
+      <SubItem>
+        <Name>fMaximumFrameTime</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>64</BitOffs>
+        <Default>
+          <Value>0.2</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bEnable</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>128</BitOffs>
+        <Default>
+          <Value>1</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bIsUpdating</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>136</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: IsUpdating
+        io: input
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fCentroidX</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>192</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: CentroidX
+        io: input
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fCentroidY</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: CentroidY
+        io: input
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nArrayCount</Name>
+        <Type>UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>320</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: ArrayCount
+        io: input
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bValid</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>352</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fFrameTime</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>384</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: FrameTime
+        io: input
+        field: DESC Time between frame updates
+        field: EGU sec
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fbCentroidX</Name>
+        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
+        <BitSize>960</BitSize>
+        <BitOffs>448</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: CX_
+        link: CentroidX_RBV
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fbCentroidY</Name>
+        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
+        <BitSize>960</BitSize>
+        <BitOffs>1408</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: CY_
+        link: CentroidY_RBV
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fbArrayCounter</Name>
+        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
+        <BitSize>960</BitSize>
+        <BitOffs>2368</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: Cnt_
+        link: ArrayCounter_RBV
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nLastArrayCount</Name>
+        <Type>UDINT</Type>
+        <Comment> Last array count value</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>3328</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>tLastUpdate</Name>
+        <Type>TIME</Type>
+        <Comment> Time of the last frame update</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>3360</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bInit</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>3392</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bSawFrame</Name>
+        <Type>BOOL</Type>
+        <Comment> Did we see a frame update yet?</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>3400</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
       <Name Namespace="L2SI_Vacuum_Library">E_VGC</Name>
       <BitSize>16</BitSize>
       <BaseType>INT</BaseType>
@@ -19106,715 +19333,6 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
       </Properties>
     </DataType>
     <DataType>
-      <Name>VERSION</Name>
-      <BitSize>64</BitSize>
-      <SubItem>
-        <Name>uiMajor</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>uiMinor</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>16</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>uiServicePack</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>uiPatch</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>48</BitOffs>
-      </SubItem>
-    </DataType>
-    <DataType>
-      <Name GUID="{5C8FF47F-7F83-4493-8D21-F1FF8A08F75A}" Namespace="PLC" TcBaseType="true">PlcAppSystemInfo</Name>
-      <BitSize>2048</BitSize>
-      <SubItem>
-        <Name>ObjId</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TaskCnt</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>OnlineChangeCnt</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>Flags</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000007}">DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>96</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AdsPort</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>BootDataLoaded</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>144</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>OldBootData</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>152</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AppTimestamp</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000004C}">DT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>160</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>KeepOutputsOnBP</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ShutdownInProgress</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>200</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LicensesPending</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>208</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>BSODOccured</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>216</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LoggedIn</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>224</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TComSrvPtr</Name>
-        <Type GUID="{00000030-0000-0000-E000-000000000064}">ITComObjectServer</Type>
-        <BitSize X64="64">32</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>TcComInterface</Name>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>AppName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ProjectName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>1024</BitOffs>
-      </SubItem>
-      <Hides>
-        <Hide GUID="{D91E046A-A488-4D27-8D43-0F3C40ED5081}"/>
-        <Hide GUID="{5DCEB2BC-E196-43AD-80B7-EBACF31A430B}"/>
-        <Hide GUID="{1B9FDDE4-B3B7-4F0F-AB14-24EDC2F643E7}"/>
-        <Hide GUID="{C1C52E30-BC0B-44CA-BF39-E2FE7F2D145C}"/>
-      </Hides>
-    </DataType>
-    <DataType>
-      <Name GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}" Namespace="PLC" TcBaseType="true">PlcTaskSystemInfo</Name>
-      <BitSize>1024</BitSize>
-      <SubItem>
-        <Name>ObjId</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>Priority</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>AdsPort</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>80</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleCount</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>96</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>DcTaskTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-00000000000C}">LINT</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>LastExecTime</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>FirstCycle</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>224</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>CycleTimeExceeded</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>232</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>InCallAfterOutputUpdate</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>240</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>RTViolation</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>248</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>TaskName</Name>
-        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
-        <BitSize>512</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <Hides>
-        <Hide GUID="{6A76D020-03A2-465C-A678-C341951E9EF3}"/>
-        <Hide GUID="{6F7D679F-72A0-4831-A7F1-085F839743ED}"/>
-      </Hides>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_KindOfTask</Name>
-      <BitSize>16</BitSize>
-      <BaseType>INT</BaseType>
-      <EnumInfo>
-        <Text>_implicit_cyclic</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_event</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_external</Text>
-        <Enum>2</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>_implicit_freewheeling</Text>
-        <Enum>3</Enum>
-      </EnumInfo>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_Jitter_Distribution</Name>
-      <BitSize>48</BitSize>
-      <SubItem>
-        <Name>wRangeMax</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wCountJitterNeg</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>16</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wCountJitterPos</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>hide</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name>_Implicit_Task_Info</Name>
-      <BitSize>704</BitSize>
-      <SubItem>
-        <Name>dwVersion</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>0</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pszName</Name>
-        <Type PointerTo="1">STRING(80)</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>32</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nPriority</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>KindOf</Name>
-        <Type>_Implicit_KindOfTask</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>80</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bWatchdog</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>96</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bProfilingTask</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>104</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwEventFunctionPointer</Name>
-        <Type PointerTo="1">BYTE</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>128</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pszExternalEvent</Name>
-        <Type PointerTo="1">STRING(80)</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>160</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwTaskEntryFunctionPointer</Name>
-        <Type PointerTo="1">BYTE</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwWatchdogSensitivity</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>224</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwInterval</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>256</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwWatchdogTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>288</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwLastCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>320</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwAverageCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>352</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwMaxCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>384</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwMinCycleTime</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>416</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitter</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>448</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitterMin</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>480</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>diJitterMax</Name>
-        <Type>DINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwCycleCount</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>544</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wTaskStatus</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>576</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>wNumOfJitterDistributions</Name>
-        <Type>WORD</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>592</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>pJitterDistribution</Name>
-        <Type PointerTo="1">_Implicit_Jitter_Distribution</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>608</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bWithinSPSTimeSlicing</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>640</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>byDummy</Name>
-        <Type>BYTE</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>648</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bShouldBlock</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>656</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bActive</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>664</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>dwIECCycleCount</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>672</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>hide</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name GUID="{97CF8247-B59C-4E2C-B4B0-7350D0471457}">LCLSGeneralEventClass</Name>
-      <DisplayName TxtId="">Log event</DisplayName>
-      <EventId>
-        <Name Id="0">Critical</Name>
-        <DisplayName TxtId="">Critical</DisplayName>
-        <Severity>Critical</Severity>
-      </EventId>
-      <EventId>
-        <Name Id="1">Error</Name>
-        <DisplayName TxtId="">Error</DisplayName>
-        <Severity>Error</Severity>
-      </EventId>
-      <EventId>
-        <Name Id="2">Warning</Name>
-        <DisplayName TxtId="">Warning</DisplayName>
-        <Severity>Warning</Severity>
-      </EventId>
-      <EventId>
-        <Name Id="3">Info</Name>
-        <DisplayName TxtId="">Info</DisplayName>
-        <Severity>Info</Severity>
-      </EventId>
-      <EventId>
-        <Name Id="4">Verbose</Name>
-        <DisplayName TxtId="">Verbose</DisplayName>
-        <Severity>Verbose</Severity>
-      </EventId>
-      <Hides>
-        <Hide GUID="{E50B8F82-4C54-4F5A-855E-90970D01354A}"/>
-        <Hide GUID="{772B0B6F-412E-46FD-9006-6E00BFFE1C3D}"/>
-        <Hide GUID="{8FAD87A4-C885-4A4F-85AF-8AB324945AE2}"/>
-        <Hide GUID="{16BEE339-E307-4BC2-8E77-D5FB1794DF5A}"/>
-        <Hide GUID="{B7E60A74-CB5C-4A02-B59C-74B86A888DE9}"/>
-        <Hide GUID="{6B58EF80-AB34-4F6C-81D0-B0589F4FC534}"/>
-        <Hide GUID="{9E76D1D7-D744-4E3D-B111-F6F94B60E6AB}"/>
-      </Hides>
-    </DataType>
-    <DataType>
-      <Name>FB_EpicsCentroidMonitor</Name>
-      <Comment>
-    EPICS AreaDetector Stats Plugin Centroid Monitor
-
-    Requires a "link" pragma to specify the full plugin prefix.
-
-</Comment>
-      <BitSize>3456</BitSize>
-      <SubItem>
-        <Name>fMaximumFrameTime</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Default>
-          <Value>0.2</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bEnable</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>128</BitOffs>
-        <Default>
-          <Value>1</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bIsUpdating</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>136</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: IsUpdating
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fCentroidX</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: CentroidX
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fCentroidY</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: CentroidY
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nArrayCount</Name>
-        <Type>UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>320</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ArrayCount
-        io: input
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bValid</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>352</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fFrameTime</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: FrameTime
-        io: input
-        field: DESC Time between frame updates
-        field: EGU sec
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbCentroidX</Name>
-        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
-        <BitSize>960</BitSize>
-        <BitOffs>448</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: CX_
-        link: CentroidX_RBV
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbCentroidY</Name>
-        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
-        <BitSize>960</BitSize>
-        <BitOffs>1408</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: CY_
-        link: CentroidY_RBV
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbArrayCounter</Name>
-        <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
-        <BitSize>960</BitSize>
-        <BitOffs>2368</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: Cnt_
-        link: ArrayCounter_RBV
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nLastArrayCount</Name>
-        <Type>UDINT</Type>
-        <Comment> Last array count value</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>3328</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>tLastUpdate</Name>
-        <Type>TIME</Type>
-        <Comment> Time of the last frame update</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>3360</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bInit</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>3392</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bSawFrame</Name>
-        <Type>BOOL</Type>
-        <Comment> Did we see a frame update yet?</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>3400</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
       <Name>FB_ShutterSafety</Name>
       <BitSize>160</BitSize>
       <SubItem>
@@ -20531,6 +20049,488 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         </Property>
       </Properties>
     </DataType>
+    <DataType>
+      <Name>VERSION</Name>
+      <BitSize>64</BitSize>
+      <SubItem>
+        <Name>uiMajor</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>uiMinor</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>uiServicePack</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>uiPatch</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+    </DataType>
+    <DataType>
+      <Name GUID="{5C8FF47F-7F83-4493-8D21-F1FF8A08F75A}" Namespace="PLC" TcBaseType="true">PlcAppSystemInfo</Name>
+      <BitSize>2048</BitSize>
+      <SubItem>
+        <Name>ObjId</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TaskCnt</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>OnlineChangeCnt</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Flags</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000007}">DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>96</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AdsPort</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>BootDataLoaded</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>144</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>OldBootData</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>152</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AppTimestamp</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000004C}">DT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>160</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>KeepOutputsOnBP</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>ShutdownInProgress</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>200</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LicensesPending</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>208</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>BSODOccured</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>216</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LoggedIn</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>224</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TComSrvPtr</Name>
+        <Type GUID="{00000030-0000-0000-E000-000000000064}">ITComObjectServer</Type>
+        <BitSize X64="64">32</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>TcComInterface</Name>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>AppName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>ProjectName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>1024</BitOffs>
+      </SubItem>
+      <Hides>
+        <Hide GUID="{D91E046A-A488-4D27-8D43-0F3C40ED5081}"/>
+        <Hide GUID="{5DCEB2BC-E196-43AD-80B7-EBACF31A430B}"/>
+        <Hide GUID="{1B9FDDE4-B3B7-4F0F-AB14-24EDC2F643E7}"/>
+        <Hide GUID="{C1C52E30-BC0B-44CA-BF39-E2FE7F2D145C}"/>
+      </Hides>
+    </DataType>
+    <DataType>
+      <Name GUID="{56294066-FFF7-46F3-8206-FA06A30B13BA}" Namespace="PLC" TcBaseType="true">PlcTaskSystemInfo</Name>
+      <BitSize>1024</BitSize>
+      <SubItem>
+        <Name>ObjId</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Priority</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>AdsPort</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>80</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleCount</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>96</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>DcTaskTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-00000000000C}">LINT</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>LastExecTime</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>FirstCycle</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>224</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>CycleTimeExceeded</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>232</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>InCallAfterOutputUpdate</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>240</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>RTViolation</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>248</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TaskName</Name>
+        <Type GUID="{18071995-0000-0000-0000-00010000003F}">STRING(63)</Type>
+        <BitSize>512</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <Hides>
+        <Hide GUID="{6A76D020-03A2-465C-A678-C341951E9EF3}"/>
+        <Hide GUID="{6F7D679F-72A0-4831-A7F1-085F839743ED}"/>
+      </Hides>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_KindOfTask</Name>
+      <BitSize>16</BitSize>
+      <BaseType>INT</BaseType>
+      <EnumInfo>
+        <Text>_implicit_cyclic</Text>
+        <Enum>0</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_event</Text>
+        <Enum>1</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_external</Text>
+        <Enum>2</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>_implicit_freewheeling</Text>
+        <Enum>3</Enum>
+      </EnumInfo>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_Jitter_Distribution</Name>
+      <BitSize>48</BitSize>
+      <SubItem>
+        <Name>wRangeMax</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wCountJitterNeg</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wCountJitterPos</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>hide</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name>_Implicit_Task_Info</Name>
+      <BitSize>704</BitSize>
+      <SubItem>
+        <Name>dwVersion</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pszName</Name>
+        <Type PointerTo="1">STRING(80)</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>nPriority</Name>
+        <Type>INT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>KindOf</Name>
+        <Type>_Implicit_KindOfTask</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>80</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bWatchdog</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>96</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bProfilingTask</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>104</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwEventFunctionPointer</Name>
+        <Type PointerTo="1">BYTE</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>128</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pszExternalEvent</Name>
+        <Type PointerTo="1">STRING(80)</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>160</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwTaskEntryFunctionPointer</Name>
+        <Type PointerTo="1">BYTE</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwWatchdogSensitivity</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>224</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwInterval</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>256</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwWatchdogTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>288</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwLastCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>320</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwAverageCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>352</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwMaxCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>384</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwMinCycleTime</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>416</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitter</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>448</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitterMin</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>480</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>diJitterMax</Name>
+        <Type>DINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwCycleCount</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>544</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wTaskStatus</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>576</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>wNumOfJitterDistributions</Name>
+        <Type>WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>592</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>pJitterDistribution</Name>
+        <Type PointerTo="1">_Implicit_Jitter_Distribution</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>608</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bWithinSPSTimeSlicing</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>640</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>byDummy</Name>
+        <Type>BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>648</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bShouldBlock</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>656</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bActive</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>664</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>dwIECCycleCount</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>672</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>hide</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name GUID="{97CF8247-B59C-4E2C-B4B0-7350D0471457}">LCLSGeneralEventClass</Name>
+      <DisplayName TxtId="">Log event</DisplayName>
+      <EventId>
+        <Name Id="0">Critical</Name>
+        <DisplayName TxtId="">Critical</DisplayName>
+        <Severity>Critical</Severity>
+      </EventId>
+      <EventId>
+        <Name Id="1">Error</Name>
+        <DisplayName TxtId="">Error</DisplayName>
+        <Severity>Error</Severity>
+      </EventId>
+      <EventId>
+        <Name Id="2">Warning</Name>
+        <DisplayName TxtId="">Warning</DisplayName>
+        <Severity>Warning</Severity>
+      </EventId>
+      <EventId>
+        <Name Id="3">Info</Name>
+        <DisplayName TxtId="">Info</DisplayName>
+        <Severity>Info</Severity>
+      </EventId>
+      <EventId>
+        <Name Id="4">Verbose</Name>
+        <DisplayName TxtId="">Verbose</DisplayName>
+        <Severity>Verbose</Severity>
+      </EventId>
+      <Hides>
+        <Hide GUID="{E50B8F82-4C54-4F5A-855E-90970D01354A}"/>
+        <Hide GUID="{772B0B6F-412E-46FD-9006-6E00BFFE1C3D}"/>
+        <Hide GUID="{8FAD87A4-C885-4A4F-85AF-8AB324945AE2}"/>
+        <Hide GUID="{16BEE339-E307-4BC2-8E77-D5FB1794DF5A}"/>
+        <Hide GUID="{B7E60A74-CB5C-4A02-B59C-74B86A888DE9}"/>
+        <Hide GUID="{6B58EF80-AB34-4F6C-81D0-B0589F4FC534}"/>
+        <Hide GUID="{9E76D1D7-D744-4E3D-B111-F6F94B60E6AB}"/>
+      </Hides>
+    </DataType>
   </DataTypes>
   <Modules>
     <Module GUID="{B25D291A-FE9E-49CB-B3E2-1B3D5D37E3C9}" TcSmClass="TComPlcObjDef">
@@ -20598,7 +20598,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634703520</BitOffs>
+            <BitOffs>634703648</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay1SourceValve.i_xClsLS</Name>
@@ -20610,7 +20610,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634703528</BitOffs>
+            <BitOffs>634703656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay3SourceValve.i_xOpnLS</Name>
@@ -20623,7 +20623,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634814368</BitOffs>
+            <BitOffs>634814496</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay3SourceValve.i_xClsLS</Name>
@@ -20635,7 +20635,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634814376</BitOffs>
+            <BitOffs>634814504</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay4SourceValve.i_xOpnLS</Name>
@@ -20648,7 +20648,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634925216</BitOffs>
+            <BitOffs>634925344</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay4SourceValve.i_xClsLS</Name>
@@ -20660,7 +20660,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>634925224</BitOffs>
+            <BitOffs>634925352</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[1].i_xOpnLS</Name>
@@ -20673,7 +20673,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635036064</BitOffs>
+            <BitOffs>635036192</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[1].i_xClsLS</Name>
@@ -20685,7 +20685,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635036072</BitOffs>
+            <BitOffs>635036200</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[2].i_xOpnLS</Name>
@@ -20698,7 +20698,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635146912</BitOffs>
+            <BitOffs>635147040</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[2].i_xClsLS</Name>
@@ -20710,7 +20710,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635146920</BitOffs>
+            <BitOffs>635147048</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[3].i_xOpnLS</Name>
@@ -20723,7 +20723,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635257760</BitOffs>
+            <BitOffs>635257888</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[3].i_xClsLS</Name>
@@ -20735,7 +20735,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635257768</BitOffs>
+            <BitOffs>635257896</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[4].i_xOpnLS</Name>
@@ -20748,7 +20748,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635368608</BitOffs>
+            <BitOffs>635368736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[4].i_xClsLS</Name>
@@ -20760,7 +20760,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635368616</BitOffs>
+            <BitOffs>635368744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[5].i_xOpnLS</Name>
@@ -20773,7 +20773,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635479456</BitOffs>
+            <BitOffs>635479584</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[5].i_xClsLS</Name>
@@ -20785,7 +20785,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635479464</BitOffs>
+            <BitOffs>635479592</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[6].i_xOpnLS</Name>
@@ -20798,7 +20798,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635590304</BitOffs>
+            <BitOffs>635590432</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[6].i_xClsLS</Name>
@@ -20810,7 +20810,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635590312</BitOffs>
+            <BitOffs>635590440</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[7].i_xOpnLS</Name>
@@ -20823,7 +20823,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635701152</BitOffs>
+            <BitOffs>635701280</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[7].i_xClsLS</Name>
@@ -20835,7 +20835,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Input</Value>
               </Property>
             </Properties>
-            <BitOffs>635701160</BitOffs>
+            <BitOffs>635701288</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -20853,7 +20853,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>634703536</BitOffs>
+            <BitOffs>634703664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay3SourceValve.q_xOPN_DO</Name>
@@ -20865,7 +20865,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>634814384</BitOffs>
+            <BitOffs>634814512</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbBay4SourceValve.q_xOPN_DO</Name>
@@ -20877,7 +20877,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>634925232</BitOffs>
+            <BitOffs>634925360</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[1].q_xOPN_DO</Name>
@@ -20889,7 +20889,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635036080</BitOffs>
+            <BitOffs>635036208</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[2].q_xOPN_DO</Name>
@@ -20901,7 +20901,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635146928</BitOffs>
+            <BitOffs>635147056</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[3].q_xOPN_DO</Name>
@@ -20913,7 +20913,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635257776</BitOffs>
+            <BitOffs>635257904</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[4].q_xOPN_DO</Name>
@@ -20925,7 +20925,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635368624</BitOffs>
+            <BitOffs>635368752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[5].q_xOPN_DO</Name>
@@ -20937,7 +20937,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635479472</BitOffs>
+            <BitOffs>635479600</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[6].q_xOPN_DO</Name>
@@ -20949,7 +20949,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635590320</BitOffs>
+            <BitOffs>635590448</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbDestinationValves[7].q_xOPN_DO</Name>
@@ -20961,7 +20961,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>635701168</BitOffs>
+            <BitOffs>635701296</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -26825,6 +26825,390 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
             <BitOffs>634593440</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>GVL_BTPS.fbBay1Linear</Name>
+            <Comment>
+    Motor - Linear
+        LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
+        LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
+        LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
+    </Comment>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B1Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m1
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634626304</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3Linear</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B3Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m4
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634629376</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4Linear</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B4Lin
+        link: @(SIM)LAS:BTS:MCS2:01:m7
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634632448</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1Rotary</Name>
+            <Comment>
+        Motor - Rotary
+            LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
+    </Comment>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B1Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m2
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634635520</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3Rotary</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B3Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m6
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634638592</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4Rotary</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B4Rot
+        link: @(SIM)LAS:BTS:MCS2:01:m8
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634641664</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1Goniometer</Name>
+            <Comment>
+        Motor - Goniometer
+            LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1)
+    </Comment>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B1Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m3
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634644736</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3Goniometer</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B3Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m5
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634647808</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4Goniometer</Name>
+            <BitSize>3072</BitSize>
+            <BaseType>FB_EpicsMotorMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:B4Gon
+        link: @(SIM)LAS:BTS:MCS2:01:m9
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634650880</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1NearFieldCamStats</Name>
+            <Comment> Near field camera stats plugins, per bay </Comment>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634653952</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3NearFieldCamStats</Name>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634657408</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4NearFieldCamStats</Name>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634660864</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1FarFieldCamStats</Name>
+            <Comment> Far-field camera stats plugins, per bay </Comment>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634664320</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3FarFieldCamStats</Name>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634667776</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4FarFieldCamStats</Name>
+            <BitSize>3456</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634671232</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1SourceValve</Name>
+            <Comment> Temporary valves for testing </Comment>
+            <BitSize>110848</BitSize>
+            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634674688</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3SourceValve</Name>
+            <BitSize>110848</BitSize>
+            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634785536</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4SourceValve</Name>
+            <BitSize>110848</BitSize>
+            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634896384</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbDestinationValves</Name>
+            <BitSize>775936</BitSize>
+            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
+            <ArrayInfo>
+              <LBound>1</LBound>
+              <Elements>7</Elements>
+            </ArrayInfo>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635007232</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbShutterSafety1</Name>
+            <BitSize>160</BitSize>
+            <BaseType>FB_ShutterSafety</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: @(BTPS):Shutter:01</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635783168</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbShutterSafety3</Name>
+            <BitSize>160</BitSize>
+            <BaseType>FB_ShutterSafety</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: @(BTPS):Shutter:03</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635783328</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbShutterSafety4</Name>
+            <BitSize>160</BitSize>
+            <BaseType>FB_ShutterSafety</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: @(BTPS):Shutter:04</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635783488</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>GVL_BTPS_Constants.nDestinations</Name>
             <Comment> Destinations
 
@@ -26849,7 +27233,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634626144</BitOffs>
+            <BitOffs>635783648</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bLittleEndian</Name>
@@ -26864,7 +27248,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634626160</BitOffs>
+            <BitOffs>635783664</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bSimulationMode</Name>
@@ -26879,236 +27263,26 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>634626168</BitOffs>
+            <BitOffs>635783672</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>GVL_BTPS.fbBay1Linear</Name>
-            <Comment>
-    Motor - Linear
-        LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
-        LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
-        LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
-    </Comment>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B1Lin
-        link: @(SIM)LAS:BTS:MCS2:01:m1
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634626176</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3Linear</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B3Lin
-        link: @(SIM)LAS:BTS:MCS2:01:m4
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634629248</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4Linear</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B4Lin
-        link: @(SIM)LAS:BTS:MCS2:01:m7
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634632320</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1Rotary</Name>
-            <Comment>
-        Motor - Rotary
-            LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
-    </Comment>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B1Rot
-        link: @(SIM)LAS:BTS:MCS2:01:m2
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634635392</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3Rotary</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B3Rot
-        link: @(SIM)LAS:BTS:MCS2:01:m6
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634638464</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4Rotary</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B4Rot
-        link: @(SIM)LAS:BTS:MCS2:01:m8
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634641536</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1Goniometer</Name>
-            <Comment>
-        Motor - Goniometer
-            LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1)
-    </Comment>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B1Gon
-        link: @(SIM)LAS:BTS:MCS2:01:m3
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634644608</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3Goniometer</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B3Gon
-        link: @(SIM)LAS:BTS:MCS2:01:m5
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634647680</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4Goniometer</Name>
-            <BitSize>3072</BitSize>
-            <BaseType>FB_EpicsMotorMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:B4Gon
-        link: @(SIM)LAS:BTS:MCS2:01:m9
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634650752</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1SourceValve</Name>
-            <Comment> Temporary valves for testing </Comment>
-            <BitSize>110848</BitSize>
-            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634674560</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3SourceValve</Name>
-            <BitSize>110848</BitSize>
-            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634785408</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4SourceValve</Name>
-            <BitSize>110848</BitSize>
-            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634896256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbDestinationValves</Name>
-            <BitSize>775936</BitSize>
-            <BaseType Namespace="L2SI_Vacuum_Library">FB_VGC</BaseType>
+            <Name>GVL_BTPS.fbDestinations</Name>
+            <BitSize>68992</BitSize>
+            <BaseType>FB_DestinationDataStore</BaseType>
             <ArrayInfo>
               <LBound>1</LBound>
               <Elements>7</Elements>
             </ArrayInfo>
             <Properties>
               <Property>
+                <Name>pytmc</Name>
+                <Value>pv: @(BTPS):DEST</Value>
+              </Property>
+              <Property>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635007104</BitOffs>
+            <BitOffs>635783680</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fMaximumFrameTime</Name>
@@ -27127,7 +27301,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852032</BitOffs>
+            <BitOffs>635852672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -27157,7 +27331,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852096</BitOffs>
+            <BitOffs>635852736</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersion</Name>
@@ -27187,7 +27361,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852160</BitOffs>
+            <BitOffs>635852800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nRegisterSize</Name>
@@ -27202,7 +27376,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852224</BitOffs>
+            <BitOffs>635852864</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.nPackMode</Name>
@@ -27217,7 +27391,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852240</BitOffs>
+            <BitOffs>635852880</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bFPUSupport</Name>
@@ -27231,7 +27405,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852256</BitOffs>
+            <BitOffs>635852896</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -27245,7 +27419,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852288</BitOffs>
+            <BitOffs>635852928</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.CompilerVersionNumeric</Name>
@@ -27259,7 +27433,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852320</BitOffs>
+            <BitOffs>635852960</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._AppInfo</Name>
@@ -27273,7 +27447,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635852352</BitOffs>
+            <BitOffs>635852992</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskInfo</Name>
@@ -27291,7 +27465,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635854400</BitOffs>
+            <BitOffs>635855040</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask</Name>
@@ -27305,7 +27479,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635855424</BitOffs>
+            <BitOffs>635856064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList._TaskOid_PlcTask</Name>
@@ -27319,7 +27493,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635855456</BitOffs>
+            <BitOffs>635856096</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TwinCAT_SystemInfoVarList.__PlcTask</Name>
@@ -27340,7 +27514,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635855488</BitOffs>
+            <BitOffs>635856128</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENTS.LCLSGeneralEventClass</Name>
@@ -27363,181 +27537,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>635899840</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1NearFieldCamStats</Name>
-            <Comment> Near field camera stats plugins, per bay </Comment>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639490688</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3NearFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639494144</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4NearFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639497600</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1FarFieldCamStats</Name>
-            <Comment> Far-field camera stats plugins, per bay </Comment>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639501056</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3FarFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639504512</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4FarFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639507968</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbShutterSafety1</Name>
-            <BitSize>160</BitSize>
-            <BaseType>FB_ShutterSafety</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: @(BTPS):Shutter:01:</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639511424</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbShutterSafety3</Name>
-            <BitSize>160</BitSize>
-            <BaseType>FB_ShutterSafety</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: @(BTPS):Shutter:03:</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639511584</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbShutterSafety4</Name>
-            <BitSize>160</BitSize>
-            <BaseType>FB_ShutterSafety</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: @(BTPS):Shutter:04:</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639511744</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbDestinations</Name>
-            <BitSize>68992</BitSize>
-            <BaseType>FB_DestinationDataStore</BaseType>
-            <ArrayInfo>
-              <LBound>1</LBound>
-              <Elements>7</Elements>
-            </ArrayInfo>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: @(BTPS):DEST</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>639511936</BitOffs>
+            <BitOffs>635900480</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -27598,7 +27598,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2022-02-10T16:06:53</Value>
+          <Value>2022-02-10T16:12:57</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
