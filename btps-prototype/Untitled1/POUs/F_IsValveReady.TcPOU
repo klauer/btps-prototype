@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="F_IsValveReady" Id="{a2f34417-7555-4381-bfc5-e8de08cb850d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION F_IsValveReady : BOOL
+VAR_IN_OUT
+    fbValve : FB_VGC;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[F_IsValveReady := (
+    fbValve.iq_stValve.eState = E_ValvePositionState.OPEN AND
+    TRUE (*
+        * Placeholder for something else?
+        * TODO: Do we check eVGC_State for errors?
+        * TODO: Do we care if the laser is used at atmosphere?
+    *)
+);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

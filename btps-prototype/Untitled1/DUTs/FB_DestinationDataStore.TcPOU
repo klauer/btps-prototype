@@ -8,6 +8,16 @@ VAR_INPUT
     {attribute 'pytmc' := 'pv: DestValve'}
     fbDestinationValve : REFERENCE TO FB_VGC;
 
+    {attribute 'pytmc' := '
+        pv: ExitValveReady
+        io: input
+        field: ZNAM Not ready
+        field: ONAM Ready
+        field: ZSV MAJOR
+        field: OSV NO_ALARM
+    '}
+    bExitValveReady : BOOL;
+
     {attribute 'pytmc' := 'pv: SRC:01'}
     stSourceDataStore1 : DUT_SourceDataStore;
     // Future use:
@@ -28,7 +38,9 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Update(
+      <ST><![CDATA[bExitValveReady := F_IsValveReady(fbDestinationValve);
+
+Update(
     stDataSource:=stSourceDataStore1,
     sName:='Source 1',
     fbSourceValve:=GVL_BTPS.fbBay1SourceValve,
@@ -98,6 +110,8 @@ END_VAR]]></Declaration>
         <ST><![CDATA[stDataSource.sName := sName;
 stDataSource.fbSourceValve REF= fbSourceValve;
 
+stDataSource.bEntryValveReady := F_IsValveReady(fbSourceValve);
+
 (* Update range comparisons with their source values *)
 (* Cameras *)
 stDataSource.fbNFCentroidX.fValue := fbNearField.fCentroidX;
@@ -148,6 +162,8 @@ stDataSource.bChecksOK := (
     stDataSource.fbLinear.bInRange AND
     stDataSource.fbRotary.bInRange AND
     stDataSource.fbGoniometer.bInRange AND
+    stDataSource.bEntryValveReady AND
+    bExitValveReady AND
     TRUE
 );]]></ST>
       </Implementation>

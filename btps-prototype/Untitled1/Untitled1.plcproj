@@ -32,6 +32,9 @@
     <Compile Include="DUTs\FB_RangeComparison.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\FB_ShutterSafety.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\GVL_BTPS.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
@@ -41,6 +44,9 @@
       <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\F_IsValveReady.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">

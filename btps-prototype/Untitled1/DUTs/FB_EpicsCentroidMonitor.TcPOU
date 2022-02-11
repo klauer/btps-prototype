@@ -37,6 +37,8 @@ VAR_OUTPUT
     {attribute 'pytmc' := '
         pv: FrameTime
         io: input
+        field: DESC Time between frame updates
+        field: EGU sec
     '}
     fFrameTime : LREAL;
 END_VAR

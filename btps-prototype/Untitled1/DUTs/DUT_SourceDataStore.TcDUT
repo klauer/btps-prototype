@@ -18,6 +18,16 @@ STRUCT
     bDataValid : BOOL;
 
     {attribute 'pytmc' := '
+        pv: EntryValveReady
+        io: input
+        field: ZNAM Not ready
+        field: ONAM Ready
+        field: ZSV MAJOR
+        field: OSV NO_ALARM
+    '}
+    bEntryValveReady : BOOL;
+
+    {attribute 'pytmc' := '
         pv: ChecksOK
         io: input
         field: ZNAM Failed
@@ -26,6 +36,7 @@ STRUCT
         field: OSV NO_ALARM
     '}
     bChecksOK : BOOL;
+
     {attribute 'pytmc' := 'pv: Linear'}
     fbLinear : FB_RangeComparison;
     {attribute 'pytmc' := 'pv: Rotary'}
@@ -40,6 +51,7 @@ STRUCT
     fbFFCentroidX : FB_RangeComparison;
     {attribute 'pytmc' := 'pv: FFCenterY'}
     fbFFCentroidY : FB_RangeComparison;
+
 END_STRUCT
 END_TYPE
 ]]></Declaration>

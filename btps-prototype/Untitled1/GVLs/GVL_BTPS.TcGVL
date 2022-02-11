@@ -113,14 +113,20 @@ VAR_GLOBAL
     fbBay4SourceValve : FB_VGC;
     fbDestinationValves : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_VGC;
 
-    {attribute 'pytmc' := '
-        pv: @(BTPS):DEST
-    '}
+    {attribute 'pytmc' := 'pv: @(BTPS):Shutter:01:'}
+    fbShutterSafety1 : FB_ShutterSafety;
+    {attribute 'pytmc' := 'pv: @(BTPS):Shutter:03:'}
+    fbShutterSafety3 : FB_ShutterSafety;
+    {attribute 'pytmc' := 'pv: @(BTPS):Shutter:04:'}
+    fbShutterSafety4 : FB_ShutterSafety;
+
+    {attribute 'pytmc' := 'pv: @(BTPS):DEST'}
     fbDestinations : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_DestinationDataStore;
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Config:MaxFrameTime
         field: DESC Maximum delay from frame to frame
+        field: EGU sec
     '}
     fMaximumFrameTime : LREAL;
 

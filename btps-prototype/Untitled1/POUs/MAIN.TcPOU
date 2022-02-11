@@ -40,7 +40,12 @@ GVL_BTPS.fbDestinations[4](sName:='RIX qRIXS', fbDestinationValve:=GVL_BTPS.fbDe
 GVL_BTPS.fbDestinations[5](sName:='RIX ChemRIXS', fbDestinationValve:=GVL_BTPS.fbDestinationValves[5]);
 GVL_BTPS.fbDestinations[6](sName:='XPP', fbDestinationValve:=GVL_BTPS.fbDestinationValves[6]);
 GVL_BTPS.fbDestinations[7](sName:='Laser Lab', fbDestinationValve:=GVL_BTPS.fbDestinationValves[7]);
-]]></ST>
+
+(* Shutter safety evaluation should always come at the end. *)
+GVL_BTPS.fbShutterSafety1(nIndex:=1);
+// GVL_BTPS.fbShutterSafety2(nIndex:=2);
+GVL_BTPS.fbShutterSafety3(nIndex:=3);
+GVL_BTPS.fbShutterSafety4(nIndex:=4);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="FB_ShutterSafety" Id="{e2b40c9f-7bf0-413f-bb80-488b62056001}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_ShutterSafety
+VAR_INPUT
+
+    {attribute 'pytmc' := '
+        pv: LSS:Permission
+        io: input
+        field: ZNAM No permission
+        field: ONAM Permission
+    '}
+    bLssPermission : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: Acknowledge
+        io: io
+        field: ZNAM FALSE
+        field: ONAM TRUE
+    '}
+    bAcknowledge : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: UserOpen
+        io: io
+        field: ZNAM Close
+        field: ONAM Open
+    '}
+    bUserOpenRequest : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: Override
+        io: io
+        field: ZNAM Normal mode
+        field: ONAM Override mode
+    '}
+    bOverride : BOOL;
+
+    nIndex : UINT;
+
+END_VAR
+VAR_OUTPUT
+
+    {attribute 'pytmc' := '
+        pv: Safe
+        io: input
+        field: ZNAM Unsafe
+        field: ONAM Safe
+    '}
+    bSafeToOpen : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: Error
+        io: input
+        field: ZNAM No error
+        field: ONAM Error
+        field: ZSV NO_ALARM
+        field: OSV MAJOR
+    '}
+    bLatchedError : BOOL;
+
+    {attribute 'pytmc' := '
+        pv: LSS:OpenRequest
+        io: input
+        field: ZNAM Request close
+        field: ONAM Request open
+    '}
+    bOpenSignal : BOOL;
+
+END_VAR
+VAR
+
+    nDest : UINT;
+    bBtpsPermission : BOOL;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(*
+TODO: internal compiler error when doing this dynamically; you *must update this* for new destinations!
+There's a little AND clause that ensures you fix up each of these if nDestinations changes.
+*)
+
+bLatchedError R= bAcknowledge;
+bAcknowledge := FALSE;
+
+IF nIndex = 1 THEN
+    bBtpsPermission := (
+        GVL_BTPS.fbDestinations[1].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[2].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[3].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[4].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[5].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[6].stSourceDataStore1.bChecksOK OR
+        GVL_BTPS.fbDestinations[7].stSourceDataStore1.bChecksOK
+    ) AND GVL_BTPS_Constants.nDestinations = 7;
+ELSIF nIndex = 3 THEN
+    bBtpsPermission := (
+        GVL_BTPS.fbDestinations[1].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[2].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[3].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[4].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[5].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[6].stSourceDataStore3.bChecksOK OR
+        GVL_BTPS.fbDestinations[7].stSourceDataStore3.bChecksOK
+    ) AND GVL_BTPS_Constants.nDestinations = 7;
+ELSIF nIndex = 4 THEN
+    bBtpsPermission := (
+        GVL_BTPS.fbDestinations[1].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[2].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[3].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[4].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[5].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[6].stSourceDataStore4.bChecksOK OR
+        GVL_BTPS.fbDestinations[7].stSourceDataStore4.bChecksOK
+    ) AND GVL_BTPS_Constants.nDestinations = 7;
+ELSE
+    bBtpsPermission := FALSE;
+    bLatchedError := TRUE;
+END_IF
+
+(* Lose permission on a latched error. *)
+bBtpsPermission R= bLatchedError;
+
+(* TODO: Where do we get LSS Permission from? *)
+// bOverride R= NOT bLssPermission;
+
+(* It's safe to open IF in override mode (user says so!) or we determined it. *)
+bSafeToOpen := bOverride OR bBtpsPermission;
+
+(* Only open the shutter if requested and it's safe. *)
+bOpenSignal := bSafeToOpen AND bUserOpenRequest;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
