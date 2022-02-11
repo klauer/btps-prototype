@@ -1789,14 +1789,14 @@ record(longin, "$(BTPS):Chk:NF1:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:NF1:FrameTime_RBV") {
-  # GVL_BTPS.fbBay1NearFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay1NearF...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay1NearFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -1999,14 +1999,14 @@ record(longin, "$(BTPS):Chk:NF3:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:NF3:FrameTime_RBV") {
-  # GVL_BTPS.fbBay3NearFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay3NearF...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay3NearFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -2209,14 +2209,14 @@ record(longin, "$(BTPS):Chk:NF4:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:NF4:FrameTime_RBV") {
-  # GVL_BTPS.fbBay4NearFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay4NearF...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay4NearFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -2419,14 +2419,14 @@ record(longin, "$(BTPS):Chk:FF1:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:FF1:FrameTime_RBV") {
-  # GVL_BTPS.fbBay1FarFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay1FarFi...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay1FarFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -2629,14 +2629,14 @@ record(longin, "$(BTPS):Chk:FF3:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:FF3:FrameTime_RBV") {
-  # GVL_BTPS.fbBay3FarFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay3FarFi...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay3FarFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -2839,14 +2839,14 @@ record(longin, "$(BTPS):Chk:FF4:ArrayCount_RBV") {
 }
 
 record(ai, "$(BTPS):Chk:FF4:FrameTime_RBV") {
-  # GVL_BTPS.fbBay4FarFieldCamStats.fFrameTime
-  field(DESC, "GVL_BTPS.fbBay4FarFi...mStats.fFrameTime")
+  field(DESC, "Time between frame updates")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbBay4FarFieldCamStats.fFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -2995,6 +2995,360 @@ record(longout, "$(BTPS):Chk:FF4:Cnt_:EPICSLink:LinkSeverity") {
   field(OMSL, "closed_loop")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbBay4FarFieldCamStats.fbArrayCounter.iPLCInternalSeverity=")
   info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:LSS:Permission_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bLssPermission")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bLssPermission?")
+  field(ZNAM, "No permission")
+  field(ONAM, "Permission")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:Acknowledge_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bAcknowledge")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bAcknowledge?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:01:Acknowledge") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bAcknowledge")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety1.bAcknowledge=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:UserOpen_RBV") {
+  # GVL_BTPS.fbShutterSafety1.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bUserOpenRequest?")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:01:UserOpen") {
+  # GVL_BTPS.fbShutterSafety1.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety1.bUserOpenRequest=")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:Override_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bOverride")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bOverride?")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:01:Override") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bOverride")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety1.bOverride=")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:Safe_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bSafeToOpen")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bSafeToOpen?")
+  field(ZNAM, "Unsafe")
+  field(ONAM, "Safe")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:Error_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bLatchedError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bLatchedError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "No error")
+  field(ONAM, "Error")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:01:LSS:OpenRequest_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety1.bOpenSignal")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety1.bOpenSignal?")
+  field(ZNAM, "Request close")
+  field(ONAM, "Request open")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:LSS:Permission_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bLssPermission")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bLssPermission?")
+  field(ZNAM, "No permission")
+  field(ONAM, "Permission")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:Acknowledge_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bAcknowledge")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bAcknowledge?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:03:Acknowledge") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bAcknowledge")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety3.bAcknowledge=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:UserOpen_RBV") {
+  # GVL_BTPS.fbShutterSafety3.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bUserOpenRequest?")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:03:UserOpen") {
+  # GVL_BTPS.fbShutterSafety3.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety3.bUserOpenRequest=")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:Override_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bOverride")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bOverride?")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:03:Override") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bOverride")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety3.bOverride=")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:Safe_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bSafeToOpen")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bSafeToOpen?")
+  field(ZNAM, "Unsafe")
+  field(ONAM, "Safe")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:Error_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bLatchedError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bLatchedError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "No error")
+  field(ONAM, "Error")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:03:LSS:OpenRequest_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety3.bOpenSignal")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety3.bOpenSignal?")
+  field(ZNAM, "Request close")
+  field(ONAM, "Request open")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:LSS:Permission_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bLssPermission")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bLssPermission?")
+  field(ZNAM, "No permission")
+  field(ONAM, "Permission")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:Acknowledge_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bAcknowledge")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bAcknowledge?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:04:Acknowledge") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bAcknowledge")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety4.bAcknowledge=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:UserOpen_RBV") {
+  # GVL_BTPS.fbShutterSafety4.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bUserOpenRequest?")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:04:UserOpen") {
+  # GVL_BTPS.fbShutterSafety4.bUserOpenRequest
+  field(DESC, "GVL_BTPS.fbShutterSa....bUserOpenRequest")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety4.bUserOpenRequest=")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:Override_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bOverride")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bOverride?")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(archive, "VAL")
+}
+
+record(bo, "$(BTPS):Shutter:04:Override") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bOverride")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fbShutterSafety4.bOverride=")
+  field(ZNAM, "Normal mode")
+  field(ONAM, "Override mode")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:Safe_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bSafeToOpen")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bSafeToOpen?")
+  field(ZNAM, "Unsafe")
+  field(ONAM, "Safe")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:Error_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bLatchedError")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bLatchedError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "No error")
+  field(ONAM, "Error")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):Shutter:04:LSS:OpenRequest_RBV") {
+  field(DESC, "GVL_BTPS.fbShutterSafety4.bOpenSignal")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbShutterSafety4.bOpenSignal?")
+  field(ZNAM, "Request close")
+  field(ONAM, "Request open")
   info(archive, "VAL")
 }
 
@@ -6957,6 +7311,111 @@ record(bo, "$(BTPS):DEST:07:DestValve:MPS_FAULT_OK") {
   field(ZNAM, "MPS FAULT")
   field(ONAM, "MPS OK")
   info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:01:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[1].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[1].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:02:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[2].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[2].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:03:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[3].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[3].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:04:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[4].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[4].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:05:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[5].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[5].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:06:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[6].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[6].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:07:ExitValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[7].bExitValveReady
+  field(DESC, "GVL_BTPS.fbDestinati...].bExitValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[7].bExitValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
   info(archive, "VAL")
 }
 
@@ -11031,6 +11490,111 @@ record(bi, "$(BTPS):DEST:07:SRC:01:Valid_RBV") {
   field(OSV, "NO_ALARM")
   field(ZNAM, "Data Invalid")
   field(ONAM, "Data Valid")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:01:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[1].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[1].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:02:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[2].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[2].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:03:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[3].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[3].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:04:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[4].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[4].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:05:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[5].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[5].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:06:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[6].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[6].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:07:SRC:01:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[7].stSourceDataStore1.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[7].stSourceDataStore1.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
   info(archive, "VAL")
 }
 
@@ -20750,6 +21314,111 @@ record(bi, "$(BTPS):DEST:07:SRC:03:Valid_RBV") {
   info(archive, "VAL")
 }
 
+record(bi, "$(BTPS):DEST:01:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[1].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[1].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:02:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[2].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[2].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:03:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[3].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[3].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:04:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[4].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[4].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:05:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[5].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[5].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:06:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[6].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[6].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:07:SRC:03:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[7].stSourceDataStore3.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[7].stSourceDataStore3.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
 record(bi, "$(BTPS):DEST:01:SRC:03:ChecksOK_RBV") {
   # GVL_BTPS.fbDestinations[1].stSourceDataStore3.bChecksOK
   field(DESC, "GVL_BTPS.fbDestinati...aStore3.bChecksOK")
@@ -30466,6 +31135,111 @@ record(bi, "$(BTPS):DEST:07:SRC:04:Valid_RBV") {
   info(archive, "VAL")
 }
 
+record(bi, "$(BTPS):DEST:01:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[1].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[1].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:02:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[2].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[2].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:03:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[3].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[3].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:04:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[4].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[4].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:05:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[5].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[5].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:06:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[6].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[6].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
+record(bi, "$(BTPS):DEST:07:SRC:04:EntryValveReady_RBV") {
+  # GVL_BTPS.fbDestinations[7].stSourceDataStore4.bEntryValveReady
+  field(DESC, "GVL_BTPS.fbDestinati....bEntryValveReady")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fbDestinations[7].stSourceDataStore4.bEntryValveReady?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "Not ready")
+  field(ONAM, "Ready")
+  info(archive, "VAL")
+}
+
 record(bi, "$(BTPS):DEST:01:SRC:04:ChecksOK_RBV") {
   # GVL_BTPS.fbDestinations[1].stSourceDataStore4.bChecksOK
   field(DESC, "GVL_BTPS.fbDestinati...aStore4.bChecksOK")
@@ -36116,6 +36890,7 @@ record(ai, "$(BTPS):Config:MaxFrameTime_RBV") {
   field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_BTPS.fMaximumFrameTime?")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC")
   info(archive, "VAL")
 }
@@ -36125,6 +36900,7 @@ record(ao, "$(BTPS):Config:MaxFrameTime") {
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_BTPS.fMaximumFrameTime=")
   field(PREC, "3")
+  field(EGU, "sec")
   info(autosaveFields_pass0, "PREC VAL")
   info(archive, "VAL")
 }
