@@ -67,6 +67,11 @@ VAR_OUTPUT
     '}
     bOpenSignal : BOOL;
 
+    (* Rising trigger indicator of user requesting override. *)
+    rtOverrideSet : R_TRIG;
+    (* Falling trigger for a 'close shutter' request. *)
+    ftCloseRequest : F_TRIG;
+
 END_VAR
 VAR
 
@@ -118,6 +123,17 @@ ELSE
     bBtpsPermission := FALSE;
     bLatchedError := TRUE;
 END_IF
+
+(* Latch an error if we have no permission. *)
+bLatchedError S= NOT bBtpsPermission;
+
+(* If the user requesets a shutter close, clear override mode. *)
+ftCloseRequest(CLK:=bUserOpenRequest);
+bOverride R= ftCloseRequest.Q;
+
+(* Don't open immediately when in override mode.  Make the user request it. *)
+rtOverrideSet(CLK:=bOverride);
+bUserOpenRequest R= rtOverrideSet.Q AND NOT bBtpsPermission;
 
 (* Lose permission on a latched error. *)
 bBtpsPermission R= bLatchedError;
