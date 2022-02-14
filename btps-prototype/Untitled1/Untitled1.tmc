@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{C402AD4C-B9EC-C6B9-7848-E8017A38A30F}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{A1AD6B9C-05D7-4598-050D-A06DE155B4D5}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -19333,215 +19333,6 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
       </Properties>
     </DataType>
     <DataType>
-      <Name>FB_ShutterSafety</Name>
-      <BitSize>288</BitSize>
-      <SubItem>
-        <Name>bLssPermission</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>32</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: LSS:Permission
-        io: input
-        field: ZNAM No permission
-        field: ONAM Permission
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bAcknowledge</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>40</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: Acknowledge
-        io: io
-        field: ZNAM FALSE
-        field: ONAM TRUE
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bUserOpenRequest</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>48</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: UserOpen
-        io: io
-        field: ZNAM Close
-        field: ONAM Open
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bOverride</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>56</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: Override
-        io: io
-        field: ZNAM Normal mode
-        field: ONAM Override mode
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nIndex</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bSafeToOpen</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>80</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: Safe
-        io: input
-        field: ZNAM Unsafe
-        field: ONAM Safe
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bLatchedError</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>88</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: Error
-        io: input
-        field: ZNAM No error
-        field: ONAM Error
-        field: ZSV NO_ALARM
-        field: OSV MAJOR
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bOpenSignal</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>96</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: LSS:OpenRequest
-        io: input
-        field: ZNAM Request close
-        field: ONAM Request open
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>rtOverrideSet</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <Comment> Rising trigger indicator of user requesting override. </Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>ftCloseRequest</Name>
-        <Type Namespace="Tc2_Standard">F_TRIG</Type>
-        <Comment> Falling trigger for a 'close shutter' request. </Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nDest</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>256</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bBtpsPermission</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>272</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
       <Name>FB_RangeComparison</Name>
       <BitSize>320</BitSize>
       <SubItem>
@@ -20556,6 +20347,228 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         <Hide GUID="{6B58EF80-AB34-4F6C-81D0-B0589F4FC534}"/>
         <Hide GUID="{9E76D1D7-D744-4E3D-B111-F6F94B60E6AB}"/>
       </Hides>
+    </DataType>
+    <DataType>
+      <Name>FB_ShutterSafety</Name>
+      <BitSize>352</BitSize>
+      <SubItem>
+        <Name>bLssPermission</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: LSS:Permission
+        io: input
+        field: ZNAM No permission
+        field: ONAM Permission
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bAcknowledge</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>40</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: Acknowledge
+        io: io
+        field: ZNAM FALSE
+        field: ONAM TRUE
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bUserOpenRequest</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>48</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: UserOpen
+        io: io
+        field: ZNAM Close
+        field: ONAM Open
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bOverride</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>56</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: Override
+        io: io
+        field: ZNAM Normal mode
+        field: ONAM Override mode
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nIndex</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>64</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bSafeToOpen</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>80</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: Safe
+        io: input
+        field: ZNAM Unsafe
+        field: ONAM Safe
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bLatchedError</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>88</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: Error
+        io: input
+        field: ZNAM No error
+        field: ONAM Error
+        field: ZSV NO_ALARM
+        field: OSV MAJOR
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bOpenSignal</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>96</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: LSS:OpenRequest
+        io: input
+        field: ZNAM Request close
+        field: ONAM Request open
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>rtError</Name>
+        <Type Namespace="Tc2_Standard">R_TRIG</Type>
+        <Comment> Rising trigger indicator of a new error condition. </Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>rtOverrideSet</Name>
+        <Type Namespace="Tc2_Standard">R_TRIG</Type>
+        <Comment> Rising trigger indicator of user requesting override. </Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>192</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>ftCloseRequest</Name>
+        <Type Namespace="Tc2_Standard">F_TRIG</Type>
+        <Comment> Falling trigger for a 'close shutter' request. </Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nDest</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>320</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bBtpsPermission</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>336</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
     </DataType>
   </DataTypes>
   <Modules>
@@ -27190,21 +27203,6 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
             <BitOffs>635007232</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>GVL_BTPS.fbShutterSafety1</Name>
-            <BitSize>288</BitSize>
-            <BaseType>FB_ShutterSafety</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>pv: @(BTPS):Shutter:01</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>635783168</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>GVL_BTPS_Constants.nDestinations</Name>
             <Comment> Destinations
 
@@ -27536,8 +27534,23 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
             <BitOffs>635900480</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>GVL_BTPS.fbShutterSafety1</Name>
+            <BitSize>352</BitSize>
+            <BaseType>FB_ShutterSafety</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>pv: @(BTPS):Shutter:01</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>637834112</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>GVL_BTPS.fbShutterSafety3</Name>
-            <BitSize>288</BitSize>
+            <BitSize>352</BitSize>
             <BaseType>FB_ShutterSafety</BaseType>
             <Properties>
               <Property>
@@ -27548,11 +27561,11 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637834112</BitOffs>
+            <BitOffs>637836800</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_BTPS.fbShutterSafety4</Name>
-            <BitSize>288</BitSize>
+            <BitSize>352</BitSize>
             <BaseType>FB_ShutterSafety</BaseType>
             <Properties>
               <Property>
@@ -27563,7 +27576,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>637834400</BitOffs>
+            <BitOffs>638057888</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -27624,7 +27637,7 @@ This function block also implements PMPS and EPS interlocks, as well as Fast MPS
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2022-02-11T13:18:24</Value>
+          <Value>2022-02-14T10:42:47</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
