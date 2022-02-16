@@ -12,5 +12,6 @@ repos:
     rev: v1.0.0
     hooks:
     -   id: twincat-leading-tabs-remover
+        files: \.(TcPOU|TcDUT|TcGVL)$
     -   id: twincat-lineids-remover
     -   id: twincat-xml-format

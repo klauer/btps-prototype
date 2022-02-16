@@ -95,7 +95,7 @@ bValid := (
 );
 
 fCentroidX := fbCentroidX.fValue;
-fCentroidY := fbCentroidX.fValue;
+fCentroidY := fbCentroidY.fValue;
 nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);
 
 IF nArrayCount <> nLastArrayCount THEN
@@ -105,7 +105,7 @@ IF nArrayCount <> nLastArrayCount THEN
     bSawFrame := TRUE;
 END_IF
 
-bIsUpdating := bSawFrame AND (fFrameTime <= GVL_BTPS.fMaximumFrameTime);]]></ST>
+bIsUpdating := bSawFrame AND (fFrameTime <= GVL_BTPS_Retain.fMaximumFrameTime);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

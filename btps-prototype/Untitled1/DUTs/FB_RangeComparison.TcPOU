@@ -2,16 +2,25 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="FB_RangeComparison" Id="{cfc0fa49-ef4f-4087-9fba-d4596a28f7a5}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_RangeComparison
-VAR_INPUT
-    (* The input value for comparison *)
-    {attribute 'pytmc' := 'pv: Value; io: input'}
-    fValue : LREAL;
+VAR_INPUT RETAIN
     (* The low part of the range. *)
     {attribute 'pytmc' := 'pv: Low'}
     fLow : LREAL;
     (* The high part of the range. *)
     {attribute 'pytmc' := 'pv: High'}
     fHigh : LREAL;
+    (* Nominal value for this.  User-facing value. *)
+    {attribute 'pytmc' := '
+        pv: Nominal
+        io: io
+        field: DESC Nominal value for setting
+    '}
+    fNominal : LREAL;
+END_VAR
+VAR_INPUT
+    (* The input value for comparison *)
+    {attribute 'pytmc' := 'pv: Value; io: input'}
+    fValue : LREAL;
     (* Should the input value be trusted? *)
     {attribute 'pytmc' := '
         pv: Valid
@@ -40,8 +49,6 @@ VAR_OUTPUT
         field: OSV NO_ALARM
     '}
     bInRange : BOOL;
-END_VAR
-VAR
 END_VAR
 ]]></Declaration>
     <Implementation>

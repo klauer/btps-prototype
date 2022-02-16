@@ -25,13 +25,13 @@ GVL_BTPS.fbBay1Goniometer(bEnable:=TRUE);
 GVL_BTPS.fbBay3Goniometer(bEnable:=TRUE);
 GVL_BTPS.fbBay4Goniometer(bEnable:=TRUE);
 
-GVL_BTPS.fbBay1NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
-GVL_BTPS.fbBay3NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
-GVL_BTPS.fbBay4NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
+GVL_BTPS.fbBay1NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
+GVL_BTPS.fbBay3NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
+GVL_BTPS.fbBay4NearFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
 
-GVL_BTPS.fbBay1FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
-GVL_BTPS.fbBay3FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
-GVL_BTPS.fbBay4FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS.fMaximumFrameTime);
+GVL_BTPS.fbBay1FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
+GVL_BTPS.fbBay3FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
+GVL_BTPS.fbBay4FarFieldCamStats(bEnable:=TRUE, fMaximumFrameTime:=GVL_BTPS_Retain.fMaximumFrameTime);
 
 GVL_BTPS.fbDestinations[1](sName:='TMO IP1', fbDestinationValve:=GVL_BTPS.fbDestinationValves[1]);
 GVL_BTPS.fbDestinations[2](sName:='TMO IP2', fbDestinationValve:=GVL_BTPS.fbDestinationValves[2]);

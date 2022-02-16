@@ -212,6 +212,3539 @@
                     <Type>UDINT</Type>
                     <InOut>7</InOut>
                 </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[1].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[2].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[3].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[4].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[5].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[6].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore1.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore3.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbLinear.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbLinear.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbLinear.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbRotary.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbRotary.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbRotary.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbGoniometer.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbGoniometer.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbGoniometer.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbNFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidX.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidX.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidX.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidY.fLow</Name>
+                    <Comment>
+                        <![CDATA[ The low part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidY.fHigh</Name>
+                    <Comment>
+                        <![CDATA[ The high part of the range. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS.fbDestinations[7].stSourceDataStore4.fbFFCentroidY.fNominal</Name>
+                    <Comment>
+                        <![CDATA[ Nominal value for this.  User-facing value. ]]>
+                    </Comment>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
+                <Var>
+                    <Name>GVL_BTPS_Retain.fMaximumFrameTime</Name>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
             </Vars>
             <TaskPouOids>
                 <TaskPouOid Prio="20" OTCID="#x08502001"/>

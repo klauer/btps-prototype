@@ -123,13 +123,6 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: @(BTPS):DEST'}
     fbDestinations : ARRAY [1..GVL_BTPS_Constants.nDestinations] OF FB_DestinationDataStore;
 
-    {attribute 'pytmc' := '
-        pv: @(BTPS):Config:MaxFrameTime
-        field: DESC Maximum delay from frame to frame
-        field: EGU sec
-    '}
-    fMaximumFrameTime : LREAL;
-
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
