@@ -9,7 +9,14 @@ VAR_GLOBAL RETAIN
         field: DESC Maximum delay from frame to frame
         field: EGU sec
     '}
-    fMaximumFrameTime : LREAL;
+    fMaximumFrameTime : LREAL := 5.0;
+
+    {attribute 'pytmc' := '
+        pv: @(BTPS):Config:MinCentroidChange
+        field: DESC Minimum centroid change to be considered valid
+        field: EGU px
+    '}
+    fMinCentroidChange : LREAL := 0.05;
 
 END_VAR]]></Declaration>
   </GVL>

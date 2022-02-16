@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{4A628944-6AB0-8AD6-DB0E-EB0EE5AF5407}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{C93672E8-9D8A-D2CA-CF89-4FE0FF627743}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="L2SI_Vacuum_Library">E_PressureState</Name>
@@ -9541,7 +9541,7 @@ be up-to-date and valid within `tTimeout` seconds.
     Requires a "link" pragma to specify the full plugin prefix.
 
 </Comment>
-      <BitSize>3456</BitSize>
+      <BitSize>3648</BitSize>
       <SubItem>
         <Name>fMaximumFrameTime</Name>
         <Type>LREAL</Type>
@@ -9558,10 +9558,25 @@ be up-to-date and valid within `tTimeout` seconds.
         </Properties>
       </SubItem>
       <SubItem>
+        <Name>fMinimumChange</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
+        <Default>
+          <Value>0.05</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
         <Name>bEnable</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>128</BitOffs>
+        <BitOffs>192</BitOffs>
         <Default>
           <Value>1</Value>
         </Default>
@@ -9576,7 +9591,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>bIsUpdating</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>136</BitOffs>
+        <BitOffs>200</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9595,7 +9610,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>fCentroidX</Name>
         <Type>LREAL</Type>
         <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
+        <BitOffs>256</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9614,7 +9629,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>fCentroidY</Name>
         <Type>LREAL</Type>
         <BitSize>64</BitSize>
-        <BitOffs>256</BitOffs>
+        <BitOffs>320</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9633,7 +9648,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>nArrayCount</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <BitOffs>320</BitOffs>
+        <BitOffs>384</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9652,7 +9667,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>bValid</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>352</BitOffs>
+        <BitOffs>416</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9664,7 +9679,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>fFrameTime</Name>
         <Type>LREAL</Type>
         <BitSize>64</BitSize>
-        <BitOffs>384</BitOffs>
+        <BitOffs>448</BitOffs>
         <Properties>
           <Property>
             <Name>ItemType</Name>
@@ -9685,7 +9700,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>fbCentroidX</Name>
         <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
         <BitSize>960</BitSize>
-        <BitOffs>448</BitOffs>
+        <BitOffs>512</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -9700,7 +9715,7 @@ be up-to-date and valid within `tTimeout` seconds.
         <Name>fbCentroidY</Name>
         <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
         <BitSize>960</BitSize>
-        <BitOffs>1408</BitOffs>
+        <BitOffs>1472</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -9712,10 +9727,22 @@ be up-to-date and valid within `tTimeout` seconds.
         </Properties>
       </SubItem>
       <SubItem>
+        <Name>fLastCentroidX</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>2432</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>fLastCentroidY</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>2496</BitOffs>
+      </SubItem>
+      <SubItem>
         <Name>fbArrayCounter</Name>
         <Type Namespace="LCLS_General">FB_LREALFromEPICS</Type>
         <BitSize>960</BitSize>
-        <BitOffs>2368</BitOffs>
+        <BitOffs>2560</BitOffs>
         <Properties>
           <Property>
             <Name>pytmc</Name>
@@ -9731,27 +9758,33 @@ be up-to-date and valid within `tTimeout` seconds.
         <Type>UDINT</Type>
         <Comment> Last array count value</Comment>
         <BitSize>32</BitSize>
-        <BitOffs>3328</BitOffs>
+        <BitOffs>3520</BitOffs>
       </SubItem>
       <SubItem>
         <Name>tLastUpdate</Name>
         <Type>TIME</Type>
         <Comment> Time of the last frame update</Comment>
         <BitSize>32</BitSize>
-        <BitOffs>3360</BitOffs>
+        <BitOffs>3552</BitOffs>
       </SubItem>
       <SubItem>
         <Name>bInit</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <BitOffs>3392</BitOffs>
+        <BitOffs>3584</BitOffs>
       </SubItem>
       <SubItem>
         <Name>bSawFrame</Name>
         <Type>BOOL</Type>
         <Comment> Did we see a frame update yet?</Comment>
         <BitSize>8</BitSize>
-        <BitOffs>3400</BitOffs>
+        <BitOffs>3592</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bHaveNewFrame</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>3600</BitOffs>
       </SubItem>
       <Properties>
         <Property>
@@ -20612,7 +20645,7 @@ be up-to-date and valid within `tTimeout` seconds.
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80084992</ByteSize>
+          <ByteSize>80019456</ByteSize>
           <Symbol>
             <Name>L2SI_Vacuum_Library.Global_Variables.g_stSystem.I_EcatMaster1</Name>
             <Comment> AMS Net ID used for FB_EcatDiag, among others </Comment>
@@ -20902,7 +20935,7 @@ be up-to-date and valid within `tTimeout` seconds.
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80084992</ByteSize>
+          <ByteSize>80019456</ByteSize>
           <Symbol>
             <Name>GVL_BTPS.fbBay1SourceValve.q_xOPN_DO</Name>
             <BitSize>8</BitSize>
@@ -21028,7 +21061,7 @@ be up-to-date and valid within `tTimeout` seconds.
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80084992</ByteSize>
+          <ByteSize>80019456</ByteSize>
           <Symbol>
             <Name>GVL_BTPS.fbDestinations</Name>
             <BitSize>78400</BitSize>
@@ -27084,116 +27117,6 @@ be up-to-date and valid within `tTimeout` seconds.
             <BitOffs>634650880</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>GVL_BTPS.fbBay1NearFieldCamStats</Name>
-            <Comment> Near field camera stats plugins, per bay </Comment>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634653952</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3NearFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634657408</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4NearFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:NF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634660864</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay1FarFieldCamStats</Name>
-            <Comment> Far-field camera stats plugins, per bay </Comment>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634664320</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay3FarFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634667776</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_BTPS.fbBay4FarFieldCamStats</Name>
-            <BitSize>3456</BitSize>
-            <BaseType>FB_EpicsCentroidMonitor</BaseType>
-            <Properties>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: @(BTPS):Chk:FF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634671232</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>GVL_BTPS.fbBay1SourceValve</Name>
             <Comment> Temporary valves for testing </Comment>
             <BitSize>110848</BitSize>
@@ -27298,6 +27221,116 @@ be up-to-date and valid within `tTimeout` seconds.
               </Property>
             </Properties>
             <BitOffs>635783672</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1NearFieldCamStats</Name>
+            <Comment> Near field camera stats plugins, per bay </Comment>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635803840</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3NearFieldCamStats</Name>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635807488</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4NearFieldCamStats</Name>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:NF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635811136</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay1FarFieldCamStats</Name>
+            <Comment> Far-field camera stats plugins, per bay </Comment>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF1
+        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635814784</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay3FarFieldCamStats</Name>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF3
+        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635818432</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS.fbBay4FarFieldCamStats</Name>
+            <BitSize>3648</BitSize>
+            <BaseType>FB_EpicsCentroidMonitor</BaseType>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Chk:FF4
+        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>635822080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersion</Name>
@@ -27585,7 +27618,7 @@ be up-to-date and valid within `tTimeout` seconds.
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>PlcTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>80084992</ByteSize>
+          <ByteSize>80019456</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -33949,6 +33982,9 @@ be up-to-date and valid within `tTimeout` seconds.
             <Name>GVL_BTPS_Retain.fMaximumFrameTime</Name>
             <BitSize>64</BitSize>
             <BaseType>LREAL</BaseType>
+            <Default>
+              <Value>5</Value>
+            </Default>
             <Properties>
               <Property>
                 <Name>pytmc</Name>
@@ -33963,6 +33999,28 @@ be up-to-date and valid within `tTimeout` seconds.
               </Property>
             </Properties>
             <BitOffs>3150464</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_BTPS_Retain.fMinCentroidChange</Name>
+            <BitSize>64</BitSize>
+            <BaseType>LREAL</BaseType>
+            <Default>
+              <Value>0.05</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: @(BTPS):Config:MinCentroidChange
+        field: DESC Minimum centroid change to be considered valid 
+        field: EGU px
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>3150528</BitOffs>
           </Symbol>
         </DataArea>
       </DataAreas>
@@ -33979,15 +34037,15 @@ be up-to-date and valid within `tTimeout` seconds.
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2022-02-16T09:39:44</Value>
+          <Value>2022-02-16T11:58:12</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
-          <Value>438272</Value>
+          <Value>401408</Value>
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>79032320</Value>
+          <Value>79003648</Value>
         </Property>
       </Properties>
     </Module>

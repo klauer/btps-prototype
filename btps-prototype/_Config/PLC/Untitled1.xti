@@ -3745,6 +3745,11 @@
                     <Type>LREAL</Type>
                     <InOut>7</InOut>
                 </Var>
+                <Var>
+                    <Name>GVL_BTPS_Retain.fMinCentroidChange</Name>
+                    <Type>LREAL</Type>
+                    <InOut>7</InOut>
+                </Var>
             </Vars>
             <TaskPouOids>
                 <TaskPouOid Prio="20" OTCID="#x08502001"/>

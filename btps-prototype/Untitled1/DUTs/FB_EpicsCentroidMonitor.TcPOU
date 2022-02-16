@@ -10,6 +10,7 @@
 FUNCTION_BLOCK FB_EpicsCentroidMonitor
 VAR_INPUT
     fMaximumFrameTime : LREAL := 0.2;
+    fMinimumChange : LREAL := 0.05;
     bEnable : BOOL := TRUE;
 END_VAR
 VAR_OUTPUT
@@ -55,6 +56,9 @@ VAR
     '}
     fbCentroidY : FB_LREALFromEPICS;
 
+    fLastCentroidX : LREAL;
+    fLastCentroidY : LREAL;
+
     {attribute 'pytmc' := '
         pv: Cnt_
         link: ArrayCounter_RBV
@@ -69,6 +73,7 @@ VAR
     bInit : BOOL;
     // Did we see a frame update yet?
     bSawFrame : BOOL;
+    bHaveNewFrame : BOOL;
 
 END_VAR]]></Declaration>
     <Implementation>
@@ -98,11 +103,21 @@ fCentroidX := fbCentroidX.fValue;
 fCentroidY := fbCentroidY.fValue;
 nArrayCount := LREAL_TO_UDINT(fbArrayCounter.fValue);
 
-IF nArrayCount <> nLastArrayCount THEN
+bHaveNewFrame := (
+    nArrayCount <> nLastArrayCount AND
+    ABS(fLastCentroidX - fCentroidX) >= GVL_BTPS_Retain.fMinCentroidChange AND
+    ABS(fLastCentroidY - fCentroidY) >= GVL_BTPS_Retain.fMinCentroidChange AND
+    TRUE
+);
+
+IF bHaveNewFrame THEN
     fFrameTime := TIME_TO_LREAL(TIME() - tLastUpdate) * 0.001; // Milliseconds -> seconds
     tLastUpdate := TIME();
     nLastArrayCount := nArrayCount;
     bSawFrame := TRUE;
+
+    fLastCentroidX := fCentroidX;
+    fLastCentroidY := fCentroidY;
 END_IF
 
 bIsUpdating := bSawFrame AND (fFrameTime <= GVL_BTPS_Retain.fMaximumFrameTime);]]></ST>
