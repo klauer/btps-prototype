@@ -5,9 +5,9 @@
 VAR_GLOBAL
     (*
     Motor - Linear
-        LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1)
-        LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1)
-        LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1)
+        LAS:BTS:MCS2:01:m1 (ioc-las-bts-mcs1, las_bts_mcs2_01_m1)
+        LAS:BTS:MCS2:01:m4 (ioc-las-bts-mcs1, las_bts_mcs2_01_m4)
+        LAS:BTS:MCS2:01:m7 (ioc-las-bts-mcs1, las_bts_mcs2_01_m7)
     *)
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:B1Lin
@@ -27,9 +27,9 @@ VAR_GLOBAL
 
     (*
         Motor - Rotary
-            LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m2 (ioc-las-bts-mcs1, las_bts_mcs2_01_m2)
+            LAS:BTS:MCS2:01:m6 (ioc-las-bts-mcs1, las_bts_mcs2_01_m6)
+            LAS:BTS:MCS2:01:m8 (ioc-las-bts-mcs1, las_bts_mcs2_01_m8)
     *)
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:B1Rot
@@ -49,9 +49,9 @@ VAR_GLOBAL
 
     (*
         Motor - Goniometer
-            LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1)
-            LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1)
+            LAS:BTS:MCS2:01:m3 (ioc-las-bts-mcs1, las_bts_mcs2_01_m3)
+            LAS:BTS:MCS2:01:m5 (ioc-las-bts-mcs1, las_bts_mcs2_01_m5)
+            LAS:BTS:MCS2:01:m9 (ioc-las-bts-mcs1, las_bts_mcs2_01_m9)
     *)
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:B1Gon
@@ -72,38 +72,38 @@ VAR_GLOBAL
     (* Near field camera stats plugins, per bay *)
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:NF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats1:
+        link: @(SIM)LAS:LHN:BAY1:CAM:01:Stats2:
     '}
     fbBay1NearFieldCamStats : FB_EpicsCentroidMonitor;
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:NF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats1:
+        link: @(SIM)LAS:LHN:BAY3:CAM:01:Stats2:
     '}
     fbBay3NearFieldCamStats : FB_EpicsCentroidMonitor;
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:NF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats1:
+        link: @(SIM)LAS:LHN:BAY4:CAM:01:Stats2:
     '}
     fbBay4NearFieldCamStats : FB_EpicsCentroidMonitor;
 
     (* Far-field camera stats plugins, per bay *)
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:FF1
-        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats1:
+        link: @(SIM)LAS:LHN:BAY1:CAM:02:Stats2:
     '}
     fbBay1FarFieldCamStats : FB_EpicsCentroidMonitor;
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:FF3
-        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats1:
+        link: @(SIM)LAS:LHN:BAY3:CAM:02:Stats2:
     '}
     fbBay3FarFieldCamStats : FB_EpicsCentroidMonitor;
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Chk:FF4
-        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats1:
+        link: @(SIM)LAS:LHN:BAY4:CAM:02:Stats2:
     '}
     fbBay4FarFieldCamStats : FB_EpicsCentroidMonitor;
 
