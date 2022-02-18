@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_SavePeristentVariables" Id="{df16ef79-2907-4ff9-80ce-e27d47a4e69d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_SavePeristentVariables
+VAR
+    fbWritePersistentData: FB_WritePersistentData;
+    tonStart : TON;
+    tonInterval : TON;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[tonInterval(
+    IN:=TRUE,
+    PT:=T#1ms (* Write 1ms after startup of the PLC *)
+
+);
+
+tonStart(
+    IN:=tonStart.Q AND NOT fbWritePersistentData.BUSY,
+    PT:=T#1m (* Write every minute *)
+);
+
+fbWritePersistentData(
+    NETID:='', (* This PLC *)
+    PORT:=851, (* Application port! *)
+    TMOUT:=T#10s,  (* Maximum time before considering this a failure *)
+    START:=tonStart.Q OR tonInterval.Q (* Start with tonStart goes high or periodically *)
+);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

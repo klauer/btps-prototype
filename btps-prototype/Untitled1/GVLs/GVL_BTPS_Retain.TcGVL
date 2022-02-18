@@ -2,7 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_BTPS_Retain" Id="{f0024ece-4974-431e-ba4d-97ca2c5cbb7d}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
-VAR_GLOBAL RETAIN
+VAR_GLOBAL PERSISTENT
 
     {attribute 'pytmc' := '
         pv: @(BTPS):Config:MaxFrameTime

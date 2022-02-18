@@ -45,7 +45,9 @@ GVL_BTPS.fbDestinations[7](sName:='Laser Lab', fbDestinationValve:=GVL_BTPS.fbDe
 GVL_BTPS.fbShutterSafety1(nIndex:=1);
 // GVL_BTPS.fbShutterSafety2(nIndex:=2);
 GVL_BTPS.fbShutterSafety3(nIndex:=3);
-GVL_BTPS.fbShutterSafety4(nIndex:=4);]]></ST>
+GVL_BTPS.fbShutterSafety4(nIndex:=4);
+
+PRG_SavePeristentVariables();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -2,7 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="FB_RangeComparison" Id="{cfc0fa49-ef4f-4087-9fba-d4596a28f7a5}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_RangeComparison
-VAR_INPUT RETAIN
+VAR_INPUT PERSISTENT
     (* The low part of the range. *)
     {attribute 'pytmc' := 'pv: Low'}
     fLow : LREAL;
