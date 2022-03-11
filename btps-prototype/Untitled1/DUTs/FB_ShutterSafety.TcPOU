@@ -36,7 +36,7 @@ VAR_INPUT
     '}
     bOverride : BOOL;
 
-    nIndex : UINT;
+    nSourceIndex : UINT;
 
 END_VAR
 VAR_OUTPUT
@@ -77,50 +77,23 @@ VAR_OUTPUT
 END_VAR
 VAR
 
-    nDest : UINT;
+    nDestIndex : UINT;
     bBtpsPermission : BOOL;
 
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[(*
-TODO: internal compiler error when doing this dynamically; you *must update this* for new destinations!
-There's a little AND clause that ensures you fix up each of these if nDestinations changes.
-*)
-
-bLatchedError R= bAcknowledge;
+      <ST><![CDATA[bLatchedError R= bAcknowledge;
 bAcknowledge := FALSE;
 
-IF nIndex = 1 THEN
-    bBtpsPermission := (
-        GVL_BTPS.fbDestinations[1].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[2].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[3].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[4].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[5].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[6].stSourceDataStore1.bChecksOK OR
-        GVL_BTPS.fbDestinations[7].stSourceDataStore1.bChecksOK
-    ) AND GVL_BTPS_Constants.nDestinations = 7;
-ELSIF nIndex = 3 THEN
-    bBtpsPermission := (
-        GVL_BTPS.fbDestinations[1].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[2].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[3].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[4].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[5].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[6].stSourceDataStore3.bChecksOK OR
-        GVL_BTPS.fbDestinations[7].stSourceDataStore3.bChecksOK
-    ) AND GVL_BTPS_Constants.nDestinations = 7;
-ELSIF nIndex = 4 THEN
-    bBtpsPermission := (
-        GVL_BTPS.fbDestinations[1].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[2].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[3].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[4].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[5].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[6].stSourceDataStore4.bChecksOK OR
-        GVL_BTPS.fbDestinations[7].stSourceDataStore4.bChecksOK
-    ) AND GVL_BTPS_Constants.nDestinations = 7;
+IF nSourceIndex >= 1 AND nSourceIndex <= GVL_BTPS_Constants.nSources THEN
+	bBtpsPermission := FALSE;
+	FOR nDestIndex := 1 TO GVL_BTPS_Constants.nDestinations DO
+		bBtpsPermission := (
+			bBtpsPermission OR
+			GVL_BTPS.fbDestinations[nDestIndex].stSourceDataStore[nSourceIndex].bChecksOK
+		);
+	END_FOR
 ELSE
     bBtpsPermission := FALSE;
     bLatchedError := TRUE;

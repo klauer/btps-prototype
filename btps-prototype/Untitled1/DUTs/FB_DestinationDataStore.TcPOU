@@ -18,18 +18,11 @@ VAR_INPUT
     '}
     bExitValveReady : BOOL;
 
-    {attribute 'pytmc' := 'pv: SRC:01'}
-    stSourceDataStore1 : DUT_SourceDataStore;
-    // Future use:
-    // {attribute 'pytmc' := 'pv: SRC:02'}
-    // stSourceDataStore2 : DUT_SourceDataStore;
-    {attribute 'pytmc' := 'pv: SRC:03'}
-    stSourceDataStore3 : DUT_SourceDataStore;
-    {attribute 'pytmc' := 'pv: SRC:04'}
-    stSourceDataStore4 : DUT_SourceDataStore;
+    {attribute 'pytmc' := 'pv: SRC'}
+	stSourceDataStore : ARRAY [1..GVL_BTPS_Constants.nSources] OF DUT_SourceDataStore;
 END_VAR
 VAR_OUTPUT
-    // stSourceDataStore : ARRAY [1..GVL_BTPS_Constants.nSources] OF DUT_SourceDataStore;
+    // 
     bDataValid : BOOL;
 END_VAR
 VAR
@@ -41,7 +34,7 @@ END_VAR
       <ST><![CDATA[bExitValveReady := F_IsValveReady(fbDestinationValve);
 
 Update(
-    stDataSource:=stSourceDataStore1,
+    stDataSource:=stSourceDataStore[1],
     sName:='Source 1',
     fbSourceValve:=GVL_BTPS.fbBay1SourceValve,
     fbLinear:=GVL_BTPS.fbBay1Linear,
@@ -66,7 +59,7 @@ Update(
 *)
 
 Update(
-    stDataSource:=stSourceDataStore3,
+    stDataSource:=stSourceDataStore[3],
     sName:='Source 3',
     fbSourceValve:=GVL_BTPS.fbBay3SourceValve,
     fbLinear:=GVL_BTPS.fbBay3Linear,
@@ -77,7 +70,7 @@ Update(
 );
 
 Update(
-    stDataSource:=stSourceDataStore4,
+    stDataSource:=stSourceDataStore[4],
     sName:='Source 4',
     fbSourceValve:=GVL_BTPS.fbBay4SourceValve,
     fbLinear:=GVL_BTPS.fbBay4Linear,
